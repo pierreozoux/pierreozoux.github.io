@@ -4,7 +4,7 @@ title: "Why open source is great... How to make ey-local working with mysql and 
 date: 2013-07-09 15:25
 comments: true
 categories: [EngineYard, workflow, devops]
-published: false
+published: true
 ---
 
 When Engine Yard released `ey-local`, I was amazed as it was promising to facilitate my work. But it was a bit (s/bit/lot/) more difficult than `ey-local up`
