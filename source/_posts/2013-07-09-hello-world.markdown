@@ -6,8 +6,6 @@ comments: true
 categories: [on the fly, mood]
 ---
 
-My first post in this blog where I'll talk about technical stuff, IT related, of just my mood.
+My first post in this blog where I'll talk about technical stuff, IT related, or just my mood.
 
 As always, feel free to comment/insult/troll!
-
-Pierre
