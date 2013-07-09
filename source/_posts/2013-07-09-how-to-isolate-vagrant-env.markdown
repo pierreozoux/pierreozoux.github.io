@@ -10,6 +10,8 @@ As you may have noticed, vagrant changed version. Of course, I downloaded the la
 
 I wanted a totally isolated environment. I'm now using a `Runmefile` in my environment to change the pointer to the `.vagrant.d` folder.
 
+<!-- more -->
+
 Here is how I did it :
 
 ``` bash Add a hook in your .zshrc https://github.com/pierreozoux/dotfiles/blob/master/zshrc#L76 my .zshrc
