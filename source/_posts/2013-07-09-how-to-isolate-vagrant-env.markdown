@@ -3,7 +3,7 @@ layout: post
 title: "How to isolate vagrant env"
 date: 2013-07-09 15:06
 comments: true
-categories: [vagrant, devops]
+categories: [vagrant, devops, zsh]
 ---
 
 As you may have noticed, vagrant changed version. Of course, I downloaded the last version. The issue is that, there is a `.vagrant.d` in your home that help to configure it, and different version of vagrant use different configurations.
