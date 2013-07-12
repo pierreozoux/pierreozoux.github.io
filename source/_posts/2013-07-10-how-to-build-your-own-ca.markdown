@@ -51,7 +51,7 @@ openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateseria
 
 That's it! Everytime you visit one of your website, you'll never see again this warning!
 {% img center /images/cat_crying.jpg 'cat_crying' %}
-Remember, everytime you see this, a cat is suffering somewhere in the world, so contact the admin and explain that you love animals!
+Remember, every time you see this, a cat is suffering somewhere in the world, so contact the admin and explain that you love animals!
 
 The quick and dirty tuto is over, if you want to make it better, read the following sources.
 
