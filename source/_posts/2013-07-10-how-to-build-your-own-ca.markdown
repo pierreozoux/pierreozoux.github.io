@@ -6,7 +6,7 @@ comments: true
 categories: [sysadmin, security]
 ---
 
-Everytime you selfsign a certificate, one of them is dying!
+Every time you selfsign a certificate, one of them is dying!
 
 {% img http://placekitten.com/890/280 %}
 <!-- more -->
