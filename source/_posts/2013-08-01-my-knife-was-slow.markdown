@@ -3,7 +3,7 @@ layout: post
 title: "My knife was slow, so I sharped it!"
 date: 2013-08-01 17:39
 comments: true
-categories: 
+categories: [on the fly, zsh, chef, knife, rbenv, speed]
 ---
 
 Today, I finally decided to take care of my knife.. `knife help` was taking 30seconds..
