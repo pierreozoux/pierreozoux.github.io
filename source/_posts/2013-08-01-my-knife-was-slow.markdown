@@ -8,6 +8,8 @@ categories: [on the fly, zsh, chef, knife, rbenv, speed]
 
 Today, I finally decided to take care of my knife.. `knife help` was taking 30seconds..
 
+<!-- more -->
+
 I use zsh, with the [beautiful agnoster style](https://gist.github.com/agnoster/3712874)! Here is my [zsh file](https://github.com/pierreozoux/dotfiles/blob/master/zshrc).
 
 ## This is how I improved the speed of knife
