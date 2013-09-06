@@ -6,7 +6,7 @@ comments: true
 categories: [packer, DevOps]
 ---
 
-I wanted to introduce you my attempt to create a shared repository for Packer Template. Please, feel free to comment!
+I wanted to introduce you my attempt to create a shared repository for Packer Templates. Please, feel free to comment!
 
 <!-- more -->
 
