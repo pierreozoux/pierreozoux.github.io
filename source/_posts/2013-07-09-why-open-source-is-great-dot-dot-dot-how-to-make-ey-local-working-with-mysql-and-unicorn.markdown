@@ -3,7 +3,7 @@ layout: post
 title: "Why open source is great... How to make ey-local working with mysql and unicorn"
 date: 2013-07-09 15:25
 comments: true
-categories: [EngineYard, workflow, devops]
+categories: [EngineYard, workflow, DevOps]
 published: true
 ---
 
