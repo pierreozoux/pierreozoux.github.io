@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: sysadmin | Pierre-O's Blog]]></title>
+  <link href="http://pierreozoux.github.io/blog/categories/sysadmin/atom.xml" rel="self"/>
+  <link href="http://pierreozoux.github.io/"/>
+  <updated>2014-02-19T21:19:40+00:00</updated>
+  <id>http://pierreozoux.github.io/</id>
+  <author>
+    <name><![CDATA[Pierre Ozoux]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to build your own CA?]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/10/how-to-build-your-own-ca/"/>
+    <updated>2013-07-10T14:26:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/10/how-to-build-your-own-ca</id>
+    <content type="html"><![CDATA[<p>Every time you selfsign a certificate, one of them is dying!</p>
+
+<p><img class="<a" src="href="http://placekitten.com/890/280">http://placekitten.com/890/280</a>"></p>
+
+<!-- more -->
+
+
+<p>You like them, right? So create a rootCA, install it and sign your cert with!</p>
+
+<h1>Create the rootCA</h1>
+
+<p>``` bash Create the rootCA</p>
+
+<h1>create private root key</h1>
+
+<p>openssl genrsa -out rootCA.key 4096</p>
+
+<h1>sign it</h1>
+
+<p>openssl req -x509 -new -nodes -key rootCA.key -days 1024 -out rootCA.pem
+```</p>
+
+<h1>Install the rootCA on the clients</h1>
+
+<p>Make it available to your clients, download and install it.</p>
+
+<p>```bash Make it available
+cp rootCA.pem /var/www</p>
+
+<h1>&mdash; on your client</h1>
+
+<p>wget rootCA.pem # and install
+```</p>
+
+<h1>Sign your certificates</h1>
+
+<p>And now, for every device that need to be signed (like your intranet website!)</p>
+
+<p>``` bash Create a certificate</p>
+
+<h1>&mdash; on your device</h1>
+
+<h1>create the device private key</h1>
+
+<p>openssl genrsa -out device.key 4096</p>
+
+<h1>create the certificate signing request</h1>
+
+<h1>common-name is the most important field, this is what your browser will &ldquo;certify&rdquo;</h1>
+
+<h1>if you website is www.example.com, then put &ldquo;www.example.com&rdquo;</h1>
+
+<p>openssl req -new -key device.key -out device.csr</p>
+
+<h1>&mdash; on your server with your rootCA</h1>
+
+<p>openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days 500
+```</p>
+
+<p>That&rsquo;s it! Everytime you visit one of your website, you&rsquo;ll never see again this warning!
+<img class="center" src="/images/cat_crying.jpg" title="&lsquo;cat_crying&rsquo;" >
+Remember, every time you see this, a cat is suffering somewhere in the world, so contact the admin and explain that you love animals!</p>
+
+<p>The quick and dirty tuto is over, if you want to make it better, read the following sources.</p>
+
+<p><a href="http://www.davidpashley.com/articles/becoming-a-x-509-certificate-authority/">source 1</a>
+<a href="http://datacenteroverlords.com/2012/03/01/creating-your-own-ssl-certificate-authority/">source 2</a></p>
+]]></content>
+  </entry>
+  
+</feed>

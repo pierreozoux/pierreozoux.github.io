@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Pierre-O's Blog]]></title>
+  <link href="http://pierreozoux.github.io/atom.xml" rel="self"/>
+  <link href="http://pierreozoux.github.io/"/>
+  <updated>2014-02-19T21:19:40+00:00</updated>
+  <id>http://pierreozoux.github.io/</id>
+  <author>
+    <name><![CDATA[Pierre Ozoux]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Contribution to Packer]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/09/06/contribution-to-packer/"/>
+    <updated>2013-09-06T11:02:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/09/06/contribution-to-packer</id>
+    <content type="html"><![CDATA[<p>I wanted to introduce you my attempt to create a shared repository for Packer Templates. Please, feel free to comment!</p>
+
+<!-- more -->
+
+
+<p>Here it is on GitHub : <a href="https://github.com/pierreozoux/packer-warehouse">Packer-warehouse</a></p>
+
+<p>I really would like to hear you on how you would use it, do you think it&rsquo;s convenient.. What is missing? Thanks for your help! And if you like it, spread the word!</p>
+
+<p>And a little bonus <a href="http://pierreozoux.github.io/presentations/packer.html">the presentation</a> I gave yesterday about Packer at <a href="http://www.meetup.com/require-lx/">require(&lsquo;lx&rsquo;)</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Knife Was Slow, So I Sharped It!]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/08/01/my-knife-was-slow/"/>
+    <updated>2013-08-01T17:39:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/08/01/my-knife-was-slow</id>
+    <content type="html"><![CDATA[<p>Today, I finally decided to take care of my knife.. <code>knife help</code> was taking 30seconds..</p>
+
+<!-- more -->
+
+
+<p>I use zsh, with the <a href="https://gist.github.com/agnoster/3712874">beautiful agnoster style</a>! Here is my <a href="https://github.com/pierreozoux/dotfiles/blob/master/zshrc">zsh file</a>.</p>
+
+<h2>This is how I improved the speed of knife</h2>
+
+<p>After reading <a href="http://lists.opscode.com/sympa/arc/chef/2011-05/msg00020.html">that thread</a>, I decided to give it a try :</p>
+
+<figure class='code'><figcaption><span>1. Clean your knife plugin</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>gem list | grep knife-
+</span><span class='line'>gem uninstall knife-unused_plugin
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>2. Clean your gem env</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#At your own risk, I add to reinstall some gem, but it was a lot faster afterward!</span>
+</span><span class='line'>gem clean
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>\o/, it&rsquo;s a lot better (3s), but still not satisfied&hellip; If you have some hints?
+On top of that, my terminal was taking some seconds to load.. Annoyed&hellip;</p>
+
+<h2>Make faster the terminal loading</h2>
+
+<p>rbenv was taking a bit of time, I tried <a href="http://cantina.co/2013/01/25/speeding-up-your-console-when-using-rbenv/">this</a></p>
+
+<figure class='code'><figcaption><span>3. change the rbenv way of loading</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#in zsh config file</span>
+</span><span class='line'><span class="nb">eval</span> <span class="s2">&quot;$(rbenv init - --no-rehash)&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I still had this anoying message &ldquo;you have new mails&rdquo;, actually, I noticed, that I had an used crontab throwing errors there. And a mail per day since some month&hellip;</p>
+
+<figure class='code'><figcaption><span>4. clean mails</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cat /dev/null &gt; /var/mail/pierreozoux
+</span><span class='line'><span class="c">#remove the unused crontab</span>
+</span><span class='line'>crontab -e
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Great, my terminal is loading really fast again, I will be able to relax now :)</p>
+
+<p>As always, feel free to comment/insult/troll!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Build Your Own CA?]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/10/how-to-build-your-own-ca/"/>
+    <updated>2013-07-10T14:26:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/10/how-to-build-your-own-ca</id>
+    <content type="html"><![CDATA[<p>Every time you selfsign a certificate, one of them is dying!</p>
+
+<p><img src="http://placekitten.com/890/280"></p>
+
+<!-- more -->
+
+
+<p>You like them, right? So create a rootCA, install it and sign your cert with!</p>
+
+<h1>Create the rootCA</h1>
+
+<figure class='code'><figcaption><span>Create the rootCA</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># create private root key</span>
+</span><span class='line'>openssl genrsa -out rootCA.key 4096
+</span><span class='line'><span class="c"># sign it</span>
+</span><span class='line'>openssl req -x509 -new -nodes -key rootCA.key -days 1024 -out rootCA.pem
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>Install the rootCA on the clients</h1>
+
+<p>Make it available to your clients, download and install it.</p>
+
+<figure class='code'><figcaption><span>Make it available</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cp rootCA.pem /var/www
+</span><span class='line'><span class="c"># -- on your client</span>
+</span><span class='line'>wget rootCA.pem <span class="c"># and install</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>Sign your certificates</h1>
+
+<p>And now, for every device that need to be signed (like your intranet website!)</p>
+
+<figure class='code'><figcaption><span>Create a certificate</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#  -- on your device</span>
+</span><span class='line'><span class="c"># create the device private key</span>
+</span><span class='line'>openssl genrsa -out device.key 4096
+</span><span class='line'><span class="c"># create the certificate signing request</span>
+</span><span class='line'><span class="c"># common-name is the most important field, this is what your browser will &quot;certify&quot;</span>
+</span><span class='line'><span class="c"># if you website is www.example.com, then put &quot;www.example.com&quot;</span>
+</span><span class='line'>openssl req -new -key device.key -out device.csr
+</span><span class='line'><span class="c"># -- on your server with your rootCA</span>
+</span><span class='line'>openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days 500
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it! Everytime you visit one of your website, you&rsquo;ll never see again this warning!
+<img class="center" src="http://pierreozoux.github.io/images/cat_crying.jpg" title="'cat_crying'" >
+Remember, every time you see this, a cat is suffering somewhere in the world, so contact the admin and explain that you love animals!</p>
+
+<p>The quick and dirty tuto is over, if you want to make it better, read the following sources.</p>
+
+<p><a href="http://www.davidpashley.com/articles/becoming-a-x-509-certificate-authority/">source 1</a>
+<a href="http://datacenteroverlords.com/2012/03/01/creating-your-own-ssl-certificate-authority/">source 2</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why Open Source Is Great... How to Make Ey-local Working With Mysql and Unicorn]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/09/why-open-source-is-great-dot-dot-dot-how-to-make-ey-local-working-with-mysql-and-unicorn/"/>
+    <updated>2013-07-09T15:25:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/09/why-open-source-is-great-dot-dot-dot-how-to-make-ey-local-working-with-mysql-and-unicorn</id>
+    <content type="html"><![CDATA[<p>When Engine Yard released <code>ey-local</code>, I was amazed as it was promising to facilitate my work. But it was a bit (s/bit/lot/) more difficult than <code>ey-local up</code></p>
+
+<p>I&rsquo;ll try to explain quickly how I went thou the obstacles.</p>
+
+<!-- more -->
+
+
+<h2>Vagrant</h2>
+
+<p>I already explained <a href="http://pierreozoux.github.io/blog/2013/07/09/how-to-isolate-vagrant-env/">How to isolate vagrant env</a>, and it was indeed because <code>ey-local</code> is using the old vagrant.</p>
+
+<h2>The right workflow</h2>
+
+<p>The code of <code>ey-local</code> is open source but not in a git repo, so I had to find my way, to make a sustainable workflow.</p>
+
+<h3>Patch the recipes</h3>
+
+<p>On the way, I found it would be great to modify as little as possible the current workflow, so I decided to use the <code>patch</code> scheme that was already setup in the gem for the recipes.</p>
+
+<p>The 1st issue was that, it was not working out of the box, so I wrote a <a href="https://github.com/pierreozoux/patches_ey-local/blob/master/patches/required.patch">first patch</a> that make the gem behaving correctly regarding the basics.</p>
+
+<h3>Give back to the community</h3>
+
+<p>Looking at the EngineYard support, I saw a great demand for certain features, that I wanted also. So I thought it would be great to give back to the community.</p>
+
+<p>It is how I decided to go thou the creation of this <a href="https://github.com/pierreozoux/patches_ey-local">github repo</a>. So this is a place for us to share our patches for <code>ey-local</code>!</p>
+
+<p>Hopefully, EngineYard will reuse this material for the next releases.</p>
+
+<h2>Hacky? Hacky!</h2>
+
+<p>Yes it is unfortunately really hacky, and the next step for <code>ey-local</code>, would be to modify it so well, that we have a replacement for <code>ey</code> command.</p>
+
+<p>It should behave exactly the same, and maybe add a configuration file for the configuration we normally do online!</p>
+
+<h2>That&rsquo;s Why open source is great&hellip;</h2>
+
+<p>But it would be greater with a git repo :)</p>
+
+<p>As always, feel free to comment/insult/troll!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Isolate Vagrant Env]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/09/how-to-isolate-vagrant-env/"/>
+    <updated>2013-07-09T15:06:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/09/how-to-isolate-vagrant-env</id>
+    <content type="html"><![CDATA[<p>As you may have noticed, vagrant changed version. Of course, I downloaded the last version. The issue is that, there is a <code>.vagrant.d</code> in your home that help to configure it, and different version of vagrant use different configurations.</p>
+
+<p>I wanted a totally isolated environment. I&rsquo;m now using a <code>Runmefile</code> in my environment to change the pointer to the <code>.vagrant.d</code> folder.</p>
+
+<!-- more -->
+
+
+<p>Here is how I did it :</p>
+
+<figure class='code'><figcaption><span>Add a hook in your .zshrc</span><a href='https://github.com/pierreozoux/dotfiles/blob/master/zshrc#L76'>my .zshrc</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>_within-runme-project<span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">check_dir</span><span class="o">=</span><span class="nv">$PWD</span>
+</span><span class='line'>  <span class="k">if</span> <span class="o">[</span> <span class="nv">$check_dir</span> !<span class="o">=</span> <span class="s2">&quot;/&quot;</span> <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'>    <span class="o">[</span> -f <span class="s2">&quot;$check_dir/Runmefile&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">return</span>
+</span><span class='line'><span class="k">  fi</span>
+</span><span class='line'><span class="k">  </span><span class="nb">false</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">function </span>chpwd<span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>  <span class="k">if </span>_within-runme-project; <span class="k">then</span>
+</span><span class='line'><span class="k">    </span><span class="nb">source</span> ./Runmefile
+</span><span class='line'>  <span class="k">fi</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And Add a <code>Runmefile</code> in your project :</p>
+
+<div><script src='https://gist.github.com/5798032.js?file=Runmefile'></script>
+<noscript><pre><code>#!/bin/bash
+
+tmp_home=/tmp/home_$(basename $PWD)
+
+if [ -d $tmp_home ]; then
+  rm -rf $tmp_home
+fi
+
+mkdir $tmp_home
+
+for f in `ls -a $HOME`
+do
+  if [ $f != &quot;.&quot; ] &amp;&amp; [ $f != &quot;..&quot; ]; then
+    ln -s $HOME/$f $tmp_home/$f
+  fi
+done
+
+rm $tmp_home/.vagrant.d
+
+if [ -d ./.vagrant.d ]; then 
+  ln -s $PWD/.vagrant.d $tmp_home/.vagrant.d
+fi
+
+export HOME=$tmp_home
+echo &quot;Your HOME is now $HOME&quot;
+</code></pre></noscript></div>
+
+
+<p>Now each time you <code>cd</code> to your working directory, it&rsquo;ll change your pointer to <code>.vagrant.d</code> folder \o/</p>
+
+<p>As always, feel free to comment/insult/troll!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/09/hello-world/"/>
+    <updated>2013-07-09T12:05:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/09/hello-world</id>
+    <content type="html"><![CDATA[<p>My first post in this blog where I&rsquo;ll talk about technical stuff, IT related, or just my mood.</p>
+
+<p>As always, feel free to comment/insult/troll!</p>
+]]></content>
+  </entry>
+  
+</feed>

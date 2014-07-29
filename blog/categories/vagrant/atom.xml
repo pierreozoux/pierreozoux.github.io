@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: vagrant | Pierre-O's Blog]]></title>
+  <link href="http://pierreozoux.github.io/blog/categories/vagrant/atom.xml" rel="self"/>
+  <link href="http://pierreozoux.github.io/"/>
+  <updated>2014-02-19T21:19:40+00:00</updated>
+  <id>http://pierreozoux.github.io/</id>
+  <author>
+    <name><![CDATA[Pierre Ozoux]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to isolate vagrant env]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/09/how-to-isolate-vagrant-env/"/>
+    <updated>2013-07-09T15:06:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/09/how-to-isolate-vagrant-env</id>
+    <content type="html"><![CDATA[<p>As you may have noticed, vagrant changed version. Of course, I downloaded the last version. The issue is that, there is a <code>.vagrant.d</code> in your home that help to configure it, and different version of vagrant use different configurations.</p>
+
+<p>I wanted a totally isolated environment. I&rsquo;m now using a <code>Runmefile</code> in my environment to change the pointer to the <code>.vagrant.d</code> folder.</p>
+
+<!-- more -->
+
+
+<p>Here is how I did it :</p>
+
+<p>``` bash Add a hook in your .zshrc <a href="https://github.com/pierreozoux/dotfiles/blob/master/zshrc#L76">https://github.com/pierreozoux/dotfiles/blob/master/zshrc#L76</a> my .zshrc
+_within-runme-project() {
+  local check_dir=$PWD
+  if [ $check_dir != &ldquo;/&rdquo; ]; then</p>
+
+<pre><code>[ -f "$check_dir/Runmefile" ] &amp;&amp; return
+</code></pre>
+
+<p>  fi
+  false
+}</p>
+
+<p>function chpwd() {
+  if _within-runme-project; then</p>
+
+<pre><code>source ./Runmefile
+</code></pre>
+
+<p>  fi
+}
+```</p>
+
+<p>And Add a <code>Runmefile</code> in your project :
+<div><script src='https://gist.github.com/5798032.js?file=Runmefile'></script>
+<noscript><pre><code>#!/bin/bash
+
+tmp_home=/tmp/home_$(basename $PWD)
+
+if [ -d $tmp_home ]; then
+  rm -rf $tmp_home
+fi
+
+mkdir $tmp_home
+
+for f in `ls -a $HOME`
+do
+  if [ $f != &quot;.&quot; ] &amp;&amp; [ $f != &quot;..&quot; ]; then
+    ln -s $HOME/$f $tmp_home/$f
+  fi
+done
+
+rm $tmp_home/.vagrant.d
+
+if [ -d ./.vagrant.d ]; then 
+  ln -s $PWD/.vagrant.d $tmp_home/.vagrant.d
+fi
+
+export HOME=$tmp_home
+echo &quot;Your HOME is now $HOME&quot;
+</code></pre></noscript></div>
+</p>
+
+<p>Now each time you <code>cd</code> to your working directory, it&rsquo;ll change your pointer to <code>.vagrant.d</code> folder \o/</p>
+
+<p>As always, feel free to comment/insult/troll!</p>
+]]></content>
+  </entry>
+  
+</feed>

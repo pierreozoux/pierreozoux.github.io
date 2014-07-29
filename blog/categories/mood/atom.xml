@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mood | Pierre-O's Blog]]></title>
+  <link href="http://pierreozoux.github.io/blog/categories/mood/atom.xml" rel="self"/>
+  <link href="http://pierreozoux.github.io/"/>
+  <updated>2014-02-19T21:19:40+00:00</updated>
+  <id>http://pierreozoux.github.io/</id>
+  <author>
+    <name><![CDATA[Pierre Ozoux]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello world]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/09/hello-world/"/>
+    <updated>2013-07-09T12:05:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/09/hello-world</id>
+    <content type="html"><![CDATA[<p>My first post in this blog where I&rsquo;ll talk about technical stuff, IT related, or just my mood.</p>
+
+<p>As always, feel free to comment/insult/troll!</p>
+]]></content>
+  </entry>
+  
+</feed>
