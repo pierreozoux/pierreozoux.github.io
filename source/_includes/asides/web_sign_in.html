@@ -1,0 +1,19 @@
+{% if site.github_user %}
+<section>
+  <h1>Find me on other places!</h1>
+  <ul>
+    {% if site.twitter_user %}
+    <li><a href="https://twitter.com/{{site.twitter_user}}" rel="me">@{{site.twitter_user}} on Twitter</a></li>
+    {% endif %}
+    {% if site.github_user %}
+    <li><a href="https://github.com/{{site.github_user}}" rel="me">Github</a></li>
+    {% endif %}
+    {% if site.googleplus_user %}
+    <li><a href="https://google.com/+{{site.googleplus_user}}" rel="me">Google</a></li>
+    {% endif %}
+    {% if site.email %}
+    <li><a href="mailto:{{site.email}}" rel="me">{{site.email}}</a></li>
+    {% endif %}
+  </ul>
+</section>
+{% endif %}
