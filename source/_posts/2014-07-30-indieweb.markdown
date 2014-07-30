@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Moving to Indie web"
+date: 2014-07-30 18:02
+comments: true
+categories: [IndieWeb]
+---
+
+After [searching](https://github.com/pierreozoux/ideas) [a long time](http://pierre.oz.free.fr/) on how to build/install/join a federated social web, I found the Graal. Lately,
+I met Michiel B. de Jong, and he convinced me to switch to [Indie web](http://indiewebify.me/)! I'll write posts on how to do it with octopress!
+
+I hope you'll enjoy, and please let me know if you have questions or want to know more!
