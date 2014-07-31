@@ -26,7 +26,7 @@ www CNAME pierreozoux.github.io
 ```
 
 ## 3 - CNAME file in the project
-Then, just add a CNAME file into your project with this content:
+Then, just add a CNAME file into your project, in the source folder, with this content:
 ```bash CNAME
 www.pierre-o.fr
 ```
