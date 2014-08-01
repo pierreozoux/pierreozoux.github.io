@@ -20,6 +20,7 @@ subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email: pierre.ozoux@gmail.com
+bio: I'm trying to defend Internet Freedom by writing this blog! Soon I'll work 8hours a day for that. I'll tell you later!
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -51,7 +52,7 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/web_sign_in.html]
+default_asides: [asides/h_card.html, asides/recent_posts.html, asides/github.html, asides/web_sign_in.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
