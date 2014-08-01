@@ -20,7 +20,7 @@ subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email: pierre.ozoux@gmail.com
-bio: I'm trying to defend Internet Freedom by writing this blog! Soon I'll work 8hours a day for that. I'll tell you later!
+bio: I'm trying to defend Internet Freedom by writing this blog! Soon I'll work 8hours a day for saving the web. I'll tell you later!
 
 # ----------------------- #
 #    Jekyll & Plugins     #
