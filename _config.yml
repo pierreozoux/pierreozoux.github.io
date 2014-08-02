@@ -103,3 +103,7 @@ facebook_like: false
 
 # Gravatar
 gravatar_email: pierre.ozoux@gmail.com
+
+# Gems
+gems:
+  - jekyll-redirect-from

@@ -4,6 +4,7 @@ title: "Web Sign In and h-card"
 date: 2014-08-01 22:57:06 +0100
 comments: true
 categories: [IndieWeb]
+redirect_from: /s/8.htm
 ---
 
 Now that I own my [domain name](http://localhost:4000/blog/2014/07/31/domain-name-and-github/),

@@ -107,6 +107,9 @@ task :new_post, :title do |t, args|
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
+  redirect = Dir.glob("public/s/*").sort_by{|s| s[/\d+/].to_i }.last
+  redirect_number = /public\/s\/(\d+)\.htm/.match(redirect)[1].to_i + 1
+  redirect.gsub!(/\d+/, redirect_number.to_s).gsub!(/public/, "")
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
@@ -115,6 +118,7 @@ task :new_post, :title do |t, args|
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
     post.puts "comments: true"
     post.puts "categories: "
+    post.puts "redirect_from: #{redirect}"
     post.puts "---"
     post.puts "<!-- more -->"
   end

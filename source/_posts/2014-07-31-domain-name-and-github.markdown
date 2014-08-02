@@ -4,6 +4,7 @@ title: "Domain name and github"
 date: 2014-07-31 14:34:38 +0100
 comments: true
 categories: [IndieWeb]
+redirect_from: /s/7.htm
 ---
 
 This is the first article on how to IndieWebifyme with Octopress and GitHub. This is the first part of the level 1, 
