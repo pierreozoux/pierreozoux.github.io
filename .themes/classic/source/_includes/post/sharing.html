@@ -1,6 +1,7 @@
 <div class="sharing">
+  <a class="short_url u-url" href="{{ site.url }}{{ page.redirect_from }}">short url</a><br/>
   {% if site.twitter_tweet_button %}
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.redirect_from }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.redirect_from }}" >Tweet</a>
   {% endif %}
   {% if site.google_plus_one %}
   <div class="g-plusone" data-size="{{ site.google_plus_one_size }}"></div>
