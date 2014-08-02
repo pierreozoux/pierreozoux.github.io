@@ -1,0 +1,30 @@
+<section class="h-card">
+  <h1>
+    <a class="p-name u-url" href="{{ site.url }}">{{ site.author }}</a>
+  </h1>
+  {% if site.gravatar_email %}
+  <img class="u-photo" src="{% gravatar_image %}" alt="Gravatar of {{ site.author }} " title="Gravatar of {{ site.author }}" /><br/>
+  {% endif %}
+  {% if site.bio %}
+  <h2>Bio</h2>
+  <p class="p-note">{{ site.bio }}</p>
+  {% endif %}
+  {% if site.email %}
+  email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a><br/>
+  {% endif %}
+</section>
+
+<section>
+  <h2>Find me on other places!</h2>
+  <ul>
+    {% if site.twitter_user %}
+    <li><a href="https://twitter.com/{{site.twitter_user}}" rel="me">@{{site.twitter_user}} on Twitter</a></li>
+    {% endif %}
+    {% if site.github_user %}
+    <li><a href="https://github.com/{{site.github_user}}" rel="me">Github</a></li>
+    {% endif %}
+    {% if site.googleplus_user %}
+    <li><a href="https://google.com/+{{site.googleplus_user}}" rel="me">Google</a></li>
+    {% endif %}
+  </ul>
+</section>
