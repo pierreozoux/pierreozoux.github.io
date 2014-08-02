@@ -3,7 +3,7 @@ layout: post
 title: "permashortlinks"
 date: 2014-08-02 10:44:44 +0100
 comments: true
-categories: 
+categories: [IndieWeb]
 redirect_from: /s/9.htm
 ---
 
