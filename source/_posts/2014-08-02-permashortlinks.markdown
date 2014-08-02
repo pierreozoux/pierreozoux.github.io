@@ -47,4 +47,4 @@ index 9fb3783..8c01394 100644
 Add a `redirect_from` field to your older posts
 
 And that's it. Now, when you create a post, and it will have automatically a shortlink.
-In my case, this article has the following permashortlink: [www.pierre-o.fr/s/9.htm](www.pierre-o.fr/s/9.htm)
+In my case, this article has the following permashortlink: [http://www.pierre-o.fr/s/9.htm](www.pierre-o.fr/s/9.htm)
