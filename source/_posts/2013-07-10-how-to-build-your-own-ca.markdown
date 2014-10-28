@@ -8,7 +8,7 @@ categories: [sysadmin, security]
 
 Every time you selfsign a certificate, one of them is dying!
 
-{% img http://placekitten.com/890/280 %}
+{% img https://placekitten.com/890/280 %}
 <!-- more -->
 
 
