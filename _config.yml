@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://www.pierre-o.fr
+url: https://pierre-o.fr
 title: Pierre-O's Blog
 subtitle: My personnal blog about IT stuff
 author: Pierre Ozoux
 simple_search: http://www.duckduckgo.com/
-description: Defending Internet Freedom | devops | setting up http://IndieHosters.net
+description: Defending Internet Freedom | devops | setting up https://IndieHosters.net
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -20,7 +20,7 @@ subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email: pierre.ozoux@gmail.com
-bio: Defending Internet Freedom | setting up http://IndieHosters.net
+bio: Defending Internet Freedom | setting up https://IndieHosters.net
 
 # ----------------------- #
 #    Jekyll & Plugins     #
