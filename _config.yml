@@ -20,7 +20,7 @@ subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email: pierre.ozoux@gmail.com
-bio: Defending Internet Freedom | setting up https://IndieHosters.net
+bio: Defending Internet Freedom | devops | setting up <a href="https://IndieHosters.net">IndieHosters</a>
 
 # ----------------------- #
 #    Jekyll & Plugins     #
