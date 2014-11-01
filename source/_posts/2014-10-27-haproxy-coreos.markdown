@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HAproxy on CoreOS"
-date: 2014-08-27 10:01:14 +0100
+date: 2014-10-27 10:01:14 +0100
 comments: true
 categories: [coreos, devops, haproxy]
 redirect_from: /s/13.htm
