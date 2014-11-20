@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email: pierre.ozoux@gmail.com
+email: pierre@ozoux.net
 bio: Defending Internet Freedom | devops | setting up <a href="https://IndieHosters.net">IndieHosters</a>
 
 # ----------------------- #
