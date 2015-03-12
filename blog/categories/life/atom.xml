@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: life | Pierre-O's Blog]]></title>
-  <link href="http://pierreozoux.github.io/blog/categories/life/atom.xml" rel="self"/>
-  <link href="http://pierreozoux.github.io/"/>
-  <updated>2015-03-12T21:03:51+00:00</updated>
-  <id>http://pierreozoux.github.io/</id>
+  <link href="https://pierre-o.fr/blog/categories/life/atom.xml" rel="self"/>
+  <link href="https://pierre-o.fr/"/>
+  <updated>2015-03-12T21:04:32+00:00</updated>
+  <id>https://pierre-o.fr/</id>
   <author>
     <name><![CDATA[Pierre Ozoux]]></name>
     <email><![CDATA[pierre@ozoux.net]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Starting a New life - IndieHosters.net]]></title>
-    <link href="http://pierreozoux.github.io/blog/2014/11/01/IndieHosters/"/>
+    <link href="https://pierre-o.fr/blog/2014/11/01/IndieHosters/"/>
     <updated>2014-11-01T12:01:14+00:00</updated>
-    <id>http://pierreozoux.github.io/blog/2014/11/01/IndieHosters</id>
+    <id>https://pierre-o.fr/blog/2014/11/01/IndieHosters</id>
     <content type="html"><![CDATA[<p>Starting a new project and I&rsquo;m happy to share reasons with you! And why I do believe it is the best way for me to make Internet a better place.</p>
 
 <!-- more -->

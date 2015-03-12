@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: haproxy | Pierre-O's Blog]]></title>
-  <link href="http://pierreozoux.github.io/blog/categories/haproxy/atom.xml" rel="self"/>
-  <link href="http://pierreozoux.github.io/"/>
-  <updated>2015-03-12T21:03:51+00:00</updated>
-  <id>http://pierreozoux.github.io/</id>
+  <link href="https://pierre-o.fr/blog/categories/haproxy/atom.xml" rel="self"/>
+  <link href="https://pierre-o.fr/"/>
+  <updated>2015-03-12T21:04:32+00:00</updated>
+  <id>https://pierre-o.fr/</id>
   <author>
     <name><![CDATA[Pierre Ozoux]]></name>
     <email><![CDATA[pierre@ozoux.net]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[HAproxy on CoreOS]]></title>
-    <link href="http://pierreozoux.github.io/blog/2014/10/27/haproxy-coreos/"/>
+    <link href="https://pierre-o.fr/blog/2014/10/27/haproxy-coreos/"/>
     <updated>2014-10-27T09:01:14+00:00</updated>
-    <id>http://pierreozoux.github.io/blog/2014/10/27/haproxy-coreos</id>
+    <id>https://pierre-o.fr/blog/2014/10/27/haproxy-coreos</id>
     <content type="html"><![CDATA[<p>What are the best practices of running HAproxy on CoreOS?</p>
 
 <!-- more -->

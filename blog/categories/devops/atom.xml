@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: devops | Pierre-O's Blog]]></title>
-  <link href="http://pierreozoux.github.io/blog/categories/devops/atom.xml" rel="self"/>
-  <link href="http://pierreozoux.github.io/"/>
-  <updated>2015-03-12T21:03:51+00:00</updated>
-  <id>http://pierreozoux.github.io/</id>
+  <link href="https://pierre-o.fr/blog/categories/devops/atom.xml" rel="self"/>
+  <link href="https://pierre-o.fr/"/>
+  <updated>2015-03-12T21:04:32+00:00</updated>
+  <id>https://pierre-o.fr/</id>
   <author>
     <name><![CDATA[Pierre Ozoux]]></name>
     <email><![CDATA[pierre@ozoux.net]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Starting a New life - IndieHosters.net]]></title>
-    <link href="http://pierreozoux.github.io/blog/2014/11/01/IndieHosters/"/>
+    <link href="https://pierre-o.fr/blog/2014/11/01/IndieHosters/"/>
     <updated>2014-11-01T12:01:14+00:00</updated>
-    <id>http://pierreozoux.github.io/blog/2014/11/01/IndieHosters</id>
+    <id>https://pierre-o.fr/blog/2014/11/01/IndieHosters</id>
     <content type="html"><![CDATA[<p>Starting a new project and I&rsquo;m happy to share reasons with you! And why I do believe it is the best way for me to make Internet a better place.</p>
 
 <!-- more -->
@@ -75,9 +75,9 @@
   
   <entry>
     <title type="html"><![CDATA[HAproxy on CoreOS]]></title>
-    <link href="http://pierreozoux.github.io/blog/2014/10/27/haproxy-coreos/"/>
+    <link href="https://pierre-o.fr/blog/2014/10/27/haproxy-coreos/"/>
     <updated>2014-10-27T09:01:14+00:00</updated>
-    <id>http://pierreozoux.github.io/blog/2014/10/27/haproxy-coreos</id>
+    <id>https://pierre-o.fr/blog/2014/10/27/haproxy-coreos</id>
     <content type="html"><![CDATA[<p>What are the best practices of running HAproxy on CoreOS?</p>
 
 <!-- more -->
@@ -105,9 +105,9 @@
   
   <entry>
     <title type="html"><![CDATA[CoreOS on Hetzner]]></title>
-    <link href="http://pierreozoux.github.io/blog/2014/08/13/coreos-on-hetzner/"/>
+    <link href="https://pierre-o.fr/blog/2014/08/13/coreos-on-hetzner/"/>
     <updated>2014-08-13T21:01:14+01:00</updated>
-    <id>http://pierreozoux.github.io/blog/2014/08/13/coreos-on-hetzner</id>
+    <id>https://pierre-o.fr/blog/2014/08/13/coreos-on-hetzner</id>
     <content type="html"><![CDATA[<p>I&rsquo;m going baremetal \o/</p>
 
 <!-- more -->
@@ -129,7 +129,7 @@ cat > config&lt;&lt;EOF</p>
 EOF
 ./coreos-install -d /dev/sda -C stable -c config
 reboot
-ssh <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x63;&#111;&#114;&#x65;&#x40;&#x78;&#x2e;&#120;&#46;&#x78;&#x2e;&#120;">&#99;&#x6f;&#x72;&#x65;&#64;&#120;&#x2e;&#120;&#46;&#x78;&#x2e;&#120;</a>
+ssh <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#99;&#111;&#114;&#101;&#x40;&#x78;&#x2e;&#120;&#x2e;&#120;&#x2e;&#120;">&#99;&#x6f;&#114;&#x65;&#x40;&#120;&#46;&#x78;&#46;&#120;&#x2e;&#120;</a>
 ```</p>
 
 <p>That&rsquo;s it \o/</p>
@@ -138,9 +138,9 @@ ssh <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x63;&#111;&#114;&#x65;&
   
   <entry>
     <title type="html"><![CDATA[Contribution to Packer]]></title>
-    <link href="http://pierreozoux.github.io/blog/2013/09/06/contribution-to-packer/"/>
+    <link href="https://pierre-o.fr/blog/2013/09/06/contribution-to-packer/"/>
     <updated>2013-09-06T11:02:00+01:00</updated>
-    <id>http://pierreozoux.github.io/blog/2013/09/06/contribution-to-packer</id>
+    <id>https://pierre-o.fr/blog/2013/09/06/contribution-to-packer</id>
     <content type="html"><![CDATA[<p>I wanted to introduce you my attempt to create a shared repository for Packer Templates. Please, feel free to comment!</p>
 
 <!-- more -->
@@ -156,9 +156,9 @@ ssh <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x63;&#111;&#114;&#x65;&
   
   <entry>
     <title type="html"><![CDATA[My knife was slow, so I sharped it!]]></title>
-    <link href="http://pierreozoux.github.io/blog/2013/08/01/my-knife-was-slow/"/>
+    <link href="https://pierre-o.fr/blog/2013/08/01/my-knife-was-slow/"/>
     <updated>2013-08-01T17:39:00+01:00</updated>
-    <id>http://pierreozoux.github.io/blog/2013/08/01/my-knife-was-slow</id>
+    <id>https://pierre-o.fr/blog/2013/08/01/my-knife-was-slow</id>
     <content type="html"><![CDATA[<p>Today, I finally decided to take care of my knife.. <code>knife help</code> was taking 30seconds..</p>
 
 <!-- more -->

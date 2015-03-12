@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: zsh | Pierre-O's Blog]]></title>
-  <link href="http://pierreozoux.github.io/blog/categories/zsh/atom.xml" rel="self"/>
-  <link href="http://pierreozoux.github.io/"/>
-  <updated>2015-03-12T21:03:51+00:00</updated>
-  <id>http://pierreozoux.github.io/</id>
+  <link href="https://pierre-o.fr/blog/categories/zsh/atom.xml" rel="self"/>
+  <link href="https://pierre-o.fr/"/>
+  <updated>2015-03-12T21:04:32+00:00</updated>
+  <id>https://pierre-o.fr/</id>
   <author>
     <name><![CDATA[Pierre Ozoux]]></name>
     <email><![CDATA[pierre@ozoux.net]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My knife was slow, so I sharped it!]]></title>
-    <link href="http://pierreozoux.github.io/blog/2013/08/01/my-knife-was-slow/"/>
+    <link href="https://pierre-o.fr/blog/2013/08/01/my-knife-was-slow/"/>
     <updated>2013-08-01T17:39:00+01:00</updated>
-    <id>http://pierreozoux.github.io/blog/2013/08/01/my-knife-was-slow</id>
+    <id>https://pierre-o.fr/blog/2013/08/01/my-knife-was-slow</id>
     <content type="html"><![CDATA[<p>Today, I finally decided to take care of my knife.. <code>knife help</code> was taking 30seconds..</p>
 
 <!-- more -->
@@ -69,9 +69,9 @@ cat /dev/null > /var/mail/pierreozoux</p>
   
   <entry>
     <title type="html"><![CDATA[How to isolate vagrant env]]></title>
-    <link href="http://pierreozoux.github.io/blog/2013/07/09/how-to-isolate-vagrant-env/"/>
+    <link href="https://pierre-o.fr/blog/2013/07/09/how-to-isolate-vagrant-env/"/>
     <updated>2013-07-09T15:06:00+01:00</updated>
-    <id>http://pierreozoux.github.io/blog/2013/07/09/how-to-isolate-vagrant-env</id>
+    <id>https://pierre-o.fr/blog/2013/07/09/how-to-isolate-vagrant-env</id>
     <content type="html"><![CDATA[<p>As you may have noticed, vagrant changed version. Of course, I downloaded the last version. The issue is that, there is a <code>.vagrant.d</code> in your home that help to configure it, and different version of vagrant use different configurations.</p>
 
 <p>I wanted a totally isolated environment. I&rsquo;m now using a <code>Runmefile</code> in my environment to change the pointer to the <code>.vagrant.d</code> folder.</p>

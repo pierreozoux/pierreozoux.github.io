@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: workflow | Pierre-O's Blog]]></title>
-  <link href="http://pierreozoux.github.io/blog/categories/workflow/atom.xml" rel="self"/>
-  <link href="http://pierreozoux.github.io/"/>
-  <updated>2015-03-12T21:03:51+00:00</updated>
-  <id>http://pierreozoux.github.io/</id>
+  <link href="https://pierre-o.fr/blog/categories/workflow/atom.xml" rel="self"/>
+  <link href="https://pierre-o.fr/"/>
+  <updated>2015-03-12T21:04:32+00:00</updated>
+  <id>https://pierre-o.fr/</id>
   <author>
     <name><![CDATA[Pierre Ozoux]]></name>
     <email><![CDATA[pierre@ozoux.net]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Why open source is great... How to make ey-local working with mysql and unicorn]]></title>
-    <link href="http://pierreozoux.github.io/blog/2013/07/09/why-open-source-is-great-dot-dot-dot-how-to-make-ey-local-working-with-mysql-and-unicorn/"/>
+    <link href="https://pierre-o.fr/blog/2013/07/09/why-open-source-is-great-dot-dot-dot-how-to-make-ey-local-working-with-mysql-and-unicorn/"/>
     <updated>2013-07-09T15:25:00+01:00</updated>
-    <id>http://pierreozoux.github.io/blog/2013/07/09/why-open-source-is-great-dot-dot-dot-how-to-make-ey-local-working-with-mysql-and-unicorn</id>
+    <id>https://pierre-o.fr/blog/2013/07/09/why-open-source-is-great-dot-dot-dot-how-to-make-ey-local-working-with-mysql-and-unicorn</id>
     <content type="html"><![CDATA[<p>When Engine Yard released <code>ey-local</code>, I was amazed as it was promising to facilitate my work. But it was a bit (s/bit/lot/) more difficult than <code>ey-local up</code></p>
 
 <p>I&rsquo;ll try to explain quickly how I went thou the obstacles.</p>

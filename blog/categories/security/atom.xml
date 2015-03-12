@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: security | Pierre-O's Blog]]></title>
-  <link href="http://pierreozoux.github.io/blog/categories/security/atom.xml" rel="self"/>
-  <link href="http://pierreozoux.github.io/"/>
-  <updated>2015-03-12T21:03:51+00:00</updated>
-  <id>http://pierreozoux.github.io/</id>
+  <link href="https://pierre-o.fr/blog/categories/security/atom.xml" rel="self"/>
+  <link href="https://pierre-o.fr/"/>
+  <updated>2015-03-12T21:04:32+00:00</updated>
+  <id>https://pierre-o.fr/</id>
   <author>
     <name><![CDATA[Pierre Ozoux]]></name>
     <email><![CDATA[pierre@ozoux.net]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Defense for let's encrypt]]></title>
-    <link href="http://pierreozoux.github.io/blog/2014/11/20/Defense-for-lets-encrypt/"/>
+    <link href="https://pierre-o.fr/blog/2014/11/20/Defense-for-lets-encrypt/"/>
     <updated>2014-11-20T11:01:14+00:00</updated>
-    <id>http://pierreozoux.github.io/blog/2014/11/20/Defense-for-lets-encrypt</id>
+    <id>https://pierre-o.fr/blog/2014/11/20/Defense-for-lets-encrypt</id>
     <content type="html"><![CDATA[<p>I just read <a href="https://www.linkedin.com/pulse/article/20141120073425-26662417-why-i-won-t-be-using-let-s-encrypt-and-recommend-other-not-to-also">an article</a> from <a href="https://twitter.com/alexanderhanff/">alexanderhanff</a> against <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>.</p>
 
 <p>I&rsquo;m sorry, but I can&rsquo;t let it go.</p>
@@ -57,9 +57,9 @@
   
   <entry>
     <title type="html"><![CDATA[How to build your own CA?]]></title>
-    <link href="http://pierreozoux.github.io/blog/2013/07/10/how-to-build-your-own-ca/"/>
+    <link href="https://pierre-o.fr/blog/2013/07/10/how-to-build-your-own-ca/"/>
     <updated>2013-07-10T14:26:00+01:00</updated>
-    <id>http://pierreozoux.github.io/blog/2013/07/10/how-to-build-your-own-ca</id>
+    <id>https://pierre-o.fr/blog/2013/07/10/how-to-build-your-own-ca</id>
     <content type="html"><![CDATA[<p>Every time you selfsign a certificate, one of them is dying!</p>
 
 <p><img class="<a" src="href="https://placekitten.com/890/280">https://placekitten.com/890/280</a>"></p>
