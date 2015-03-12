@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.1">
+  <head>
+    <title>The Old Reader</title>
+    <dateCreated>Sat, 21 Feb 2015 16:29:24 GMT</dateCreated>
+    <dateModified>Sat, 21 Feb 2015 16:29:24 GMT</dateModified>
+    <ownerName>Pierre.ozoux</ownerName>
+    <ownerEmail>pierre.ozoux@gmail.com</ownerEmail>
+  </head>
+  <body>
+    <outline title="Subscriptions" text="Subscriptions">
+      <outline type="rss" title="Opscode Blog" text="Opscode Blog" htmlUrl="https://www.chef.io/blog" xmlUrl="http://www.opscode.com/blog/feed/"/>
+      <outline type="rss" title="Le JO au café" text="Le JO au café" htmlUrl="http://menilmontant.typepad.fr/jorf/" xmlUrl="http://menilmontant.typepad.fr/jorf/index.rdf"/>
+      <outline type="rss" title="The Changelog" text="The Changelog" htmlUrl="http://thechangelog.com" xmlUrl="http://thechangelog.com/feed/"/>
+      <outline type="rss" title="O que esconde a Parceria Transatlântica (TTIP)?" text="O que esconde a Parceria Transatlântica (TTIP)?" htmlUrl="https://parceriatransatlantica.wordpress.com" xmlUrl="http://parceriatransatlantica.wordpress.com/feed/"/>
+      <outline type="rss" title="pierre-o's Known" text="pierre-o's Known" htmlUrl="https://microblog.pierre-o.fr/" xmlUrl="https://microblog.pierre-o.fr/?_t=rss"/>
+    </outline>
+    <outline title="OpenSource" text="OpenSource">
+      <outline type="rss" title="Blog: Project Danube" text="Blog: Project Danube" htmlUrl="http://blog.projectdanube.org" xmlUrl="http://blog.projectdanube.org/feed/"/>
+      <outline type="rss" title="Framasoft - Français" text="Framasoft - Français" htmlUrl="http://www.framasoft.net/" xmlUrl="http://www.framasoft.net/backend.php3?id_rubrique=338"/>
+      <outline type="rss" title="FreedomBox Foundation" text="FreedomBox Foundation" htmlUrl="http://www.freedomboxfoundation.org/index.en.html" xmlUrl="http://freedomboxfoundation.org/index.en.rss"/>
+      <outline type="rss" title="AltLab" text="AltLab" htmlUrl="http://altlab.org" xmlUrl="http://altlab.org/feed/"/>
+      <outline type="rss" title="Chez Francesco" text="Chez Francesco" htmlUrl="http://chezfrancesco.blogspot.com/" xmlUrl="http://chezfrancesco.blogspot.com/feeds/posts/default"/>
+      <outline type="rss" title="denishain.fr" text="denishain.fr" htmlUrl="https://denishain.fr" xmlUrl="http://denishain.fr/feed/"/>
+      <outline type="rss" title="Getting Started With Raspberry Pi" text="Getting Started With Raspberry Pi" htmlUrl="http://gettingstartedwithraspberrypi.tumblr.com/" xmlUrl="http://gettingstartedwithraspberrypi.tumblr.com/rss"/>
+      <outline type="rss" title="Google Green Blog" text="Google Green Blog" htmlUrl="http://googlegreenblog.blogspot.com/" xmlUrl="http://feeds.feedburner.com/blogspot/IZOuQ"/>
+      <outline type="rss" title="GreenIT.fr - Comments for &quot;éco-conception logicielle : 10 fois moins de serveurs pour LinkedIn&quot;" text="GreenIT.fr - Comments for &quot;éco-conception logicielle : 10 fois moins de serveurs pour LinkedIn&quot;" htmlUrl="http://www.greenit.fr/article/bonnes-pratiques/eco-conception-logicielle-10-fois-moins-de-serveurs-pour-linkedin-4783" xmlUrl="http://greenit.fr/crss/node/4783"/>
+      <outline type="rss" title="jtimberman’s Code Blog" text="jtimberman’s Code Blog" htmlUrl="http://jtimberman.housepub.org/" xmlUrl="http://jtimberman.housepub.org/atom.xml"/>
+      <outline type="rss" title="Kickstarter: Push the FreedomBox Foundation from 0 to 60 in 30 days" text="Kickstarter: Push the FreedomBox Foundation from 0 to 60 in 30 days" htmlUrl="http://www.kickstarter.com/projects/721744279/push-the-freedombox-foundation-from-0-to-60-in-30/posts.atom" xmlUrl="http://www.kickstarter.com/projects/721744279/push-the-freedombox-foundation-from-0-to-60-in-30/posts.atom"/>
+      <outline type="rss" title="La Bande Pas Dessinée" text="La Bande Pas Dessinée" htmlUrl="http://www.labandepasdessinee.com/bpd" xmlUrl="http://feeds.feedburner.com/labandepasdessinee"/>
+    </outline>
+    <outline title="Vidéo" text="Vidéo">
+      <outline type="rss" title="la vidéothèque d'UbiCast" text="la vidéothèque d'UbiCast" htmlUrl="http://ubicast.tv" xmlUrl="http://ubicast.tv/rss.xml"/>
+    </outline>
+    <outline title="New-Tech" text="New-Tech">
+      <outline type="rss" title="April" text="April" htmlUrl="http://www.april.org" xmlUrl="http://www.april.org/fr/rss.xml"/>
+      <outline type="rss" title="French Data Network" text="French Data Network" htmlUrl="http://www.fdn.fr/" xmlUrl="http://www.fdn.fr/backend-breves.php"/>
+      <outline type="rss" title="French Data Network" text="French Data Network" htmlUrl="http://www.fdn.fr/" xmlUrl="http://www.fdn.fr/backend.php"/>
+      <outline type="rss" title="GreenIT - Toute l'actualité française du Green IT" text="GreenIT - Toute l'actualité française du Green IT" htmlUrl="http://www.greenit.fr/frontpage" xmlUrl="http://feeds.feedburner.com/GreenIT"/>
+      <outline type="rss" title="Journal du Pirate" text="Journal du Pirate" htmlUrl="http://journaldupirate.com" xmlUrl="http://www.journaldupirate.com/feed/"/>
+      <outline type="rss" title="La Grotte Du Barbu" text="La Grotte Du Barbu" htmlUrl="http://www.lagrottedubarbu.com" xmlUrl="http://www.lagrottedubarbu.com/feed/"/>
+      <outline type="rss" title="La Quadrature du Net" text="La Quadrature du Net" htmlUrl="http://www.laquadrature.net" xmlUrl="http://www.laquadrature.net/fr/rss.xml"/>
+      <outline type="rss" title="☠ Bluetouff's blog" text="☠ Bluetouff's blog" htmlUrl="http://bluetouff.com" xmlUrl="http://feeds.feedburner.com/bluetouff/RPba"/>
+    </outline>
+    <outline title="Culture-Lisboa" text="Culture-Lisboa">
+      <outline type="rss" title="concertos - Nov 2012" text="concertos - Nov 2012" htmlUrl="http://www.gulbenkian.pt/index.php?object=239&amp;cal=concertos&amp;view=month&amp;getdate=20131231" xmlUrl="http://www.gulbenkian.pt/calendar/rss/rss2.0.php?cal=..%2Fcalendars%2Fconcertos.ics&amp;cpath=&amp;rssview=month"/>
+      <outline type="rss" title="eventos - Nov 2012" text="eventos - Nov 2012" htmlUrl="http://www.gulbenkian.pt/index.php?object=239&amp;cal=eventos&amp;view=month&amp;getdate=20131231" xmlUrl="http://www.gulbenkian.pt/calendar/rss/rss2.0.php?cal=..%2Fcalendars%2Feventos.ics&amp;cpath=&amp;rssview=month"/>
+      <outline type="rss" title="exposicoes - Nov 2012" text="exposicoes - Nov 2012" htmlUrl="http://www.gulbenkian.pt/index.php?object=239&amp;cal=exposicoes&amp;view=month&amp;getdate=20131231" xmlUrl="http://www.gulbenkian.pt/calendar/rss/rss2.0.php?cal=..%2Fcalendars%2Fexposicoes.ics&amp;cpath=&amp;rssview=month"/>
+    </outline>
+    <outline title="SysAdmin" text="SysAdmin">
+      <outline type="rss" title="blog" text="blog" htmlUrl="https://davidbourguignon.wordpress.com" xmlUrl="http://davidbourguignon.wordpress.com/feed/"/>
+      <outline type="rss" title="Nathen Harvey" text="Nathen Harvey" htmlUrl="http://nathenharvey.github.com/nathenharvey/" xmlUrl="http://nathenharvey.com/atom.xml"/>
+      <outline type="rss" title="OpenMediaVault" text="OpenMediaVault" htmlUrl="http://www.openmediavault.org" xmlUrl="http://blog.openmediavault.org/?feed=rss2"/>
+      <outline type="rss" title="syslog" text="syslog" htmlUrl="https://kura.io/" xmlUrl="https://syslog.tv/feed/"/>
+      <outline type="rss" title="The Fat Bloke Sings" text="The Fat Bloke Sings" htmlUrl="https://blogs.oracle.com/fatbloke/" xmlUrl="http://blogs.oracle.com/fatbloke/feed/entries/rss?cat=%2FVirtualBox"/>
+    </outline>
+    <outline title="Amis" text="Amis">
+      <outline type="rss" title="Galerie photo de Fred" text="Galerie photo de Fred" htmlUrl="https://picasaweb.google.com/109375301418966176553" xmlUrl="http://picasaweb.google.com/data/feed/base/user/frederic.cimma?alt=rss&amp;kind=album&amp;hl=fr&amp;access=public"/>
+      <outline type="rss" title="Galerie photo de thomas.delorme" text="Galerie photo de thomas.delorme" htmlUrl="https://picasaweb.google.com/112958693612898008629" xmlUrl="http://picasaweb.google.com/data/feed/base/user/thomas.delorme?alt=rss&amp;kind=album&amp;hl=fr&amp;access=public"/>
+      <outline type="rss" title="Picasa Web Albums - bastien.lia" text="Picasa Web Albums - bastien.lia" htmlUrl="https://picasaweb.google.com/107931509651095438125" xmlUrl="http://picasaweb.google.com/data/feed/base/user/bastien.lia?alt=rss&amp;kind=album&amp;hl=en_US&amp;access=public"/>
+      <outline type="rss" title="Picasa Web Albums - matthieu.balmes" text="Picasa Web Albums - matthieu.balmes" htmlUrl="https://picasaweb.google.com/116849349867653285345" xmlUrl="http://picasaweb.google.com/data/feed/base/user/matthieu.balmes?alt=rss&amp;kind=album&amp;hl=en_US&amp;access=public"/>
+      <outline type="rss" title="(titre inconnu)" text="(titre inconnu)" htmlUrl="http://www.enlargeyourplaylist.com" xmlUrl="http://www.enlargeyourplaylist.com/feed/"/>
+      <outline type="rss" title="Tok Tok...Bangkok" text="Tok Tok...Bangkok" htmlUrl="http://toktokbangkok.blogspot.com/" xmlUrl="http://toktokbangkok.blogspot.com/feeds/posts/default"/>
+      <outline type="rss" title="YouTube - paztek34" text="YouTube - paztek34" htmlUrl="http://www.youtube.com/channel/UCOGlswWU-e4UQDGrdqowF4w/videos" xmlUrl="http://gdata.youtube.com/feeds/base/users/paztek34/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile"/>
+    </outline>
+    <outline title="News" text="News">
+      <outline type="rss" title="Margin Call" text="Margin Call" htmlUrl="http://www.margincall.fr" xmlUrl="http://www.margincall.fr/feed"/>
+      <outline type="rss" title="OWNI" text="OWNI" htmlUrl="http://owni.fr" xmlUrl="http://owni.fr/feed/"/>
+      <outline type="rss" title="Parti Pirate - le Blog" text="Parti Pirate - le Blog" htmlUrl="http://partipirate.org/blog" xmlUrl="http://partipirate.org/blog/index.xml"/>
+      <outline type="rss" title="Reflets" text="Reflets" htmlUrl="http://reflets.info" xmlUrl="http://reflets.info/feed/"/>
+      <outline type="rss" title="(titre inconnu)" text="(titre inconnu)" htmlUrl="http://www.boostmykarma.com/app/webroot/wp" xmlUrl="http://www.boostmykarma.com/app/webroot/wp/feed/"/>
+    </outline>
+    <outline title="Design" text="Design">
+      <outline type="rss" title="J'affiche...!" text="J'affiche...!" htmlUrl="http://jaffiche.fr" xmlUrl="http://feeds.feedburner.com/jaffichefr"/>
+      <outline type="rss" title="L'actu en patates" text="L'actu en patates" htmlUrl="http://vidberg.blog.lemonde.fr" xmlUrl="http://vidberg.blog.lemonde.fr/feed/"/>
+    </outline>
+    <outline title="New-Web" text="New-Web">
+      <outline type="rss" title="Epeus Epigone" text="Epeus Epigone" htmlUrl="http://epeus.blogspot.com/" xmlUrl="http://epeus.blogspot.com/feeds/posts/default"/>
+      <outline type="rss" title="FredCavazza.net" text="FredCavazza.net" htmlUrl="http://www.fredcavazza.net" xmlUrl="http://www.fredcavazza.net/feed/"/>
+    </outline>
+  </body>
+</opml>
+

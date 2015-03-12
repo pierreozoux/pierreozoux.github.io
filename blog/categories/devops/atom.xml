@@ -4,7 +4,7 @@
   <title><![CDATA[Category: devops | Pierre-O's Blog]]></title>
   <link href="https://pierre-o.fr/blog/categories/devops/atom.xml" rel="self"/>
   <link href="https://pierre-o.fr/"/>
-  <updated>2015-03-12T21:04:32+00:00</updated>
+  <updated>2015-03-12T21:10:04+00:00</updated>
   <id>https://pierre-o.fr/</id>
   <author>
     <name><![CDATA[Pierre Ozoux]]></name>
@@ -129,7 +129,7 @@ cat > config&lt;&lt;EOF</p>
 EOF
 ./coreos-install -d /dev/sda -C stable -c config
 reboot
-ssh <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#99;&#111;&#114;&#101;&#x40;&#x78;&#x2e;&#120;&#x2e;&#120;&#x2e;&#120;">&#99;&#x6f;&#114;&#x65;&#x40;&#120;&#46;&#x78;&#46;&#120;&#x2e;&#120;</a>
+ssh <a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#x63;&#x6f;&#114;&#x65;&#64;&#x78;&#x2e;&#120;&#x2e;&#120;&#46;&#x78;">&#99;&#111;&#x72;&#x65;&#64;&#x78;&#x2e;&#x78;&#46;&#x78;&#x2e;&#120;</a>
 ```</p>
 
 <p>That&rsquo;s it \o/</p>
