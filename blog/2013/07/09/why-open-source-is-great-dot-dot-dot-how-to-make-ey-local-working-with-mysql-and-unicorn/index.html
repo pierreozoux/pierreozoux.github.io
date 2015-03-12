@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Why Open Source Is Great... How to Make Ey-local Working With Mysql and Unicorn - Pierre-O's Blog</title>
+  <meta name="author" content="Pierre Ozoux">
+
+  
+  <meta name="description" content="Why Open Source Is Great... How to Make Ey-local Working With Mysql and Unicorn Jul 9th, 2013 When Engine Yard released ey-local, I was amazed as it &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+  <link rel="canonical" href="http://pierreozoux.github.io/blog/2013/07/09/why-open-source-is-great-dot-dot-dot-how-to-make-ey-local-working-with-mysql-and-unicorn">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Pierre-O's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pierre-O's Blog</a></h1>
+  
+    <h2>My personnal blog about IT stuff</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://www.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="site:pierreozoux.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search&hellip;"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="h-entry hentry" role="article">
+  
+  <header>
+    
+      <h1 class="p-name entry-title">Why Open Source Is Great... How to Make Ey-local Working With Mysql and Unicorn</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time class="dt-published" datetime="2013-07-09T15:25:00+01:00" pubdate data-updated="true">Jul 9<sup>th</sup>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="e-content entry-content"><p>When Engine Yard released <code>ey-local</code>, I was amazed as it was promising to facilitate my work. But it was a bit (s/bit/lot/) more difficult than <code>ey-local up</code></p>
+
+<p>I&rsquo;ll try to explain quickly how I went thou the obstacles.</p>
+
+<!-- more -->
+
+
+<h2>Vagrant</h2>
+
+<p>I already explained <a href="/blog/2013/07/09/how-to-isolate-vagrant-env/">How to isolate vagrant env</a>, and it was indeed because <code>ey-local</code> is using the old vagrant.</p>
+
+<h2>The right workflow</h2>
+
+<p>The code of <code>ey-local</code> is open source but not in a git repo, so I had to find my way, to make a sustainable workflow.</p>
+
+<h3>Patch the recipes</h3>
+
+<p>On the way, I found it would be great to modify as little as possible the current workflow, so I decided to use the <code>patch</code> scheme that was already setup in the gem for the recipes.</p>
+
+<p>The 1st issue was that, it was not working out of the box, so I wrote a <a href="https://github.com/pierreozoux/patches_ey-local/blob/master/patches/required.patch">first patch</a> that make the gem behaving correctly regarding the basics.</p>
+
+<h3>Give back to the community</h3>
+
+<p>Looking at the EngineYard support, I saw a great demand for certain features, that I wanted also. So I thought it would be great to give back to the community.</p>
+
+<p>It is how I decided to go thou the creation of this <a href="https://github.com/pierreozoux/patches_ey-local">github repo</a>. So this is a place for us to share our patches for <code>ey-local</code>!</p>
+
+<p>Hopefully, EngineYard will reuse this material for the next releases.</p>
+
+<h2>Hacky? Hacky!</h2>
+
+<p>Yes it is unfortunately really hacky, and the next step for <code>ey-local</code>, would be to modify it so well, that we have a replacement for <code>ey</code> command.</p>
+
+<p>It should behave exactly the same, and maybe add a configuration file for the configuration we normally do online!</p>
+
+<h2>That&rsquo;s Why open source is great&hellip;</h2>
+
+<p>But it would be greater with a git repo :)</p>
+
+<p>As always, feel free to comment/insult/troll!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="p-author fn">Pierre Ozoux</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time class="dt-published" datetime="2013-07-09T15:25:00+01:00" pubdate data-updated="true">Jul 9<sup>th</sup>, 2013</time>
+      
+
+<span class="p-category categories">
+  
+    <a class='category' href='/blog/categories/devops/'>devops</a>, <a class='category' href='/blog/categories/engineyard/'>engineyard</a>, <a class='category' href='/blog/categories/workflow/'>workflow</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  <a class="short_url u-url" href="http://pierreozoux.github.io">short url</a><br/>
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://pierreozoux.github.io" data-via="pierreozoux" data-counturl="http://pierreozoux.github.io" >Tweet</a>
+  
+  
+  
+</div>
+
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/07/09/how-to-isolate-vagrant-env/" title="Previous Post: How to isolate vagrant env">&laquo; How to isolate vagrant env</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/07/10/how-to-build-your-own-ca/" title="Next Post: How to build your own CA?">How to build your own CA? &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section class="h-card">
+  <h1>
+    <a class="p-name u-url" href="http://pierreozoux.github.io">Pierre Ozoux</a>
+  </h1>
+  
+  <img class="u-photo" src="https://www.gravatar.com/avatar/367d918791a831e447fb0057da804f51" alt="Gravatar of Pierre Ozoux " title="Gravatar of Pierre Ozoux" /><br/>
+  
+  
+  <h2>Bio</h2>
+  <p class="p-note">Defending Internet Freedom | devops | setting up <a href="https://IndieHosters.net">IndieHosters</a></p>
+  
+  
+  email: <a class="u-email" href="mailto:pierre@ozoux.net">pierre@ozoux.net</a><br/>
+  
+</section>
+
+<section>
+  <h2>Find me on other places!</h2>
+  <ul>
+    
+    <li><a href="https://twitter.com/pierreozoux" rel="me">@pierreozoux on Twitter</a></li>
+    
+    
+    <li><a href="https://github.com/pierreozoux" rel="me">Github</a></li>
+    
+    
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/11/20/Defense-for-lets-encrypt/">Defense for Let's Encrypt</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/01/IndieHosters/">Starting a New Life - IndieHosters.net</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/27/haproxy-coreos/">HAproxy on CoreOS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/13/coreos-on-hetzner/">CoreOS on Hetzner</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/02/permashortlinks/">Permashortlinks</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/pierreozoux">@pierreozoux</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'pierreozoux',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Pierre Ozoux -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

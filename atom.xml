@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Pierre-O's Blog]]></title>
+  <link href="http://pierreozoux.github.io/atom.xml" rel="self"/>
+  <link href="http://pierreozoux.github.io/"/>
+  <updated>2015-03-12T21:02:40+00:00</updated>
+  <id>http://pierreozoux.github.io/</id>
+  <author>
+    <name><![CDATA[Pierre Ozoux]]></name>
+    <email><![CDATA[pierre@ozoux.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Defense for Let's Encrypt]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/11/20/Defense-for-lets-encrypt/"/>
+    <updated>2014-11-20T11:01:14+00:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/11/20/Defense-for-lets-encrypt</id>
+    <content type="html"><![CDATA[<p>I just read <a href="https://www.linkedin.com/pulse/article/20141120073425-26662417-why-i-won-t-be-using-let-s-encrypt-and-recommend-other-not-to-also">an article</a> from <a href="https://twitter.com/alexanderhanff/">alexanderhanff</a> against <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>.</p>
+
+<p>I&rsquo;m sorry, but I can&rsquo;t let it go.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Starting a New Life - IndieHosters.net]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/11/01/IndieHosters/"/>
+    <updated>2014-11-01T12:01:14+00:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/11/01/IndieHosters</id>
+    <content type="html"><![CDATA[<p>Starting a new project and I&rsquo;m happy to share reasons with you! And why I do believe it is the best way for me to make Internet a better place.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HAproxy on CoreOS]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/10/27/haproxy-coreos/"/>
+    <updated>2014-10-27T09:01:14+00:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/10/27/haproxy-coreos</id>
+    <content type="html"><![CDATA[<p>What are the best practices of running HAproxy on CoreOS?</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CoreOS on Hetzner]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/08/13/coreos-on-hetzner/"/>
+    <updated>2014-08-13T21:01:14+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/08/13/coreos-on-hetzner</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m going baremetal \o/</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Permashortlinks]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/08/02/permashortlinks/"/>
+    <updated>2014-08-02T10:44:44+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/08/02/permashortlinks</id>
+    <content type="html"><![CDATA[<p>Just for fun, I did a permashortlinks engine for Octopress \o/</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Web Sign in and H-card]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/08/01/web-sign-in/"/>
+    <updated>2014-08-01T22:57:06+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/08/01/web-sign-in</id>
+    <content type="html"><![CDATA[<p>Now that I own my <a href="http://localhost:4000/blog/2014/07/31/domain-name-and-github/">domain name</a>,
+let&rsquo;s setup <a href="http://indiewebcamp.com/How_to_set_up_web_sign-in_on_your_own_domain">Web Sign In</a> with Octopress.
+We&rsquo;ll also add an h-card, so that I own my digital identity.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Domain Name and Github]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/07/31/domain-name-and-github/"/>
+    <updated>2014-07-31T14:34:38+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/07/31/domain-name-and-github</id>
+    <content type="html"><![CDATA[<p>This is the first article on how to IndieWebifyme with Octopress and GitHub. This is the first part of the level 1,
+get a domain name.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Moving to Indie Web]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/07/30/indieweb/"/>
+    <updated>2014-07-30T18:02:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/07/30/indieweb</id>
+    <content type="html"><![CDATA[<p>After <a href="https://github.com/pierreozoux/ideas">searching</a> <a href="http://pierre.oz.free.fr/">a long time</a> on how to
+build/install/join a federated social web, I found the Graal. Lately, I met Michiel B. de Jong, and
+<a href="https://michielbdejong.com/blog/8.html">he convinced</a> me to switch to
+<a href="http://indiewebify.me/">Indie web</a>! I&rsquo;ll write posts on how I&rsquo;m doing it!</p>
+
+<p>My idea right now is to use Octopress, hosted by GitHub pages. I plan to use <a href="http://webmention.io/">webmention.io</a> and
+<a href="https://www.brid.gy/">brid.gy</a></p>
+
+<p>I hope you&rsquo;ll enjoy, and please let me know if you have questions or want to know more!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Contribution to Packer]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/09/06/contribution-to-packer/"/>
+    <updated>2013-09-06T11:02:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/09/06/contribution-to-packer</id>
+    <content type="html"><![CDATA[<p>I wanted to introduce you my attempt to create a shared repository for Packer Templates. Please, feel free to comment!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Knife Was Slow, So I Sharped It!]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/08/01/my-knife-was-slow/"/>
+    <updated>2013-08-01T17:39:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/08/01/my-knife-was-slow</id>
+    <content type="html"><![CDATA[<p>Today, I finally decided to take care of my knife.. <code>knife help</code> was taking 30seconds..</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Build Your Own CA?]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/10/how-to-build-your-own-ca/"/>
+    <updated>2013-07-10T14:26:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/10/how-to-build-your-own-ca</id>
+    <content type="html"><![CDATA[<p>Every time you selfsign a certificate, one of them is dying!</p>
+
+<p><img src="https://placekitten.com/890/280"></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why Open Source Is Great... How to Make Ey-local Working With Mysql and Unicorn]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/09/why-open-source-is-great-dot-dot-dot-how-to-make-ey-local-working-with-mysql-and-unicorn/"/>
+    <updated>2013-07-09T15:25:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/09/why-open-source-is-great-dot-dot-dot-how-to-make-ey-local-working-with-mysql-and-unicorn</id>
+    <content type="html"><![CDATA[<p>When Engine Yard released <code>ey-local</code>, I was amazed as it was promising to facilitate my work. But it was a bit (s/bit/lot/) more difficult than <code>ey-local up</code></p>
+
+<p>I&rsquo;ll try to explain quickly how I went thou the obstacles.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Isolate Vagrant Env]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/09/how-to-isolate-vagrant-env/"/>
+    <updated>2013-07-09T15:06:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/09/how-to-isolate-vagrant-env</id>
+    <content type="html"><![CDATA[<p>As you may have noticed, vagrant changed version. Of course, I downloaded the last version. The issue is that, there is a <code>.vagrant.d</code> in your home that help to configure it, and different version of vagrant use different configurations.</p>
+
+<p>I wanted a totally isolated environment. I&rsquo;m now using a <code>Runmefile</code> in my environment to change the pointer to the <code>.vagrant.d</code> folder.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/09/hello-world/"/>
+    <updated>2013-07-09T12:05:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/09/hello-world</id>
+    <content type="html"><![CDATA[<p>My first post in this blog where I&rsquo;ll talk about technical stuff, IT related, or just my mood.</p>
+
+<p>As always, feel free to comment/insult/troll!</p>
+]]></content>
+  </entry>
+  
+</feed>

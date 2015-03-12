@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>HAproxy on CoreOS - Pierre-O's Blog</title>
+  <meta name="author" content="Pierre Ozoux">
+
+  
+  <meta name="description" content="HAproxy on CoreOS Oct 27th, 2014 What are the best practices of running HAproxy on CoreOS? Dear fellow hackers, I&rsquo;m discovering CoreOS, and I &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+  <link rel="canonical" href="http://pierreozoux.github.io/blog/2014/10/27/haproxy-coreos">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Pierre-O's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pierre-O's Blog</a></h1>
+  
+    <h2>My personnal blog about IT stuff</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://www.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="site:pierreozoux.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search&hellip;"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="h-entry hentry" role="article">
+  
+  <header>
+    
+      <h1 class="p-name entry-title">HAproxy on CoreOS</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time class="dt-published" datetime="2014-10-27T09:01:14+00:00" pubdate data-updated="true">Oct 27<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="e-content entry-content"><p>What are the best practices of running HAproxy on CoreOS?</p>
+
+<!-- more -->
+
+
+<h2>Dear fellow hackers,</h2>
+
+<p>I&rsquo;m discovering CoreOS, and I have to say, I enjoy it, it&rsquo;s really thrilling to learn all this new and exciting technology!</p>
+
+<p>I&rsquo;m trying to follow as much as possible best practices for Docker, 12-Factor App and so on. But for HAproxy, I&rsquo;m hitting the wall. So here is my problem:</p>
+
+<p>12-Factor app recommendation for logging is to have a process that sends out logs directly to stdout/stderr, and then your process management has to catch it somehow, and you can do whatever.</p>
+
+<p>In the other hand, Docker recommendation is to run just one process per container.</p>
+
+<p>Until now, I was totally fine. Systemd was catching output from my docker container, and everybody was happy. But what about HAproxy?</p>
+
+<p>So, I realised it was impossible to log to stdout except in debug mode. This is the solution I&rsquo;ll use for now, but I feel it&rsquo;s not that elegant&hellip;</p>
+
+<p>The other solution I found would be to run a container with rsyslogd listening on docker_gateway:514, and then configure HAproxy to send it&rsquo;s UDP packets to this gateway&hellip; But well, it&rsquo;s not that elegant neither..</p>
+
+<p>I&rsquo;m open for suggestions to make it wonderful!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="p-author fn">Pierre Ozoux</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time class="dt-published" datetime="2014-10-27T09:01:14+00:00" pubdate data-updated="true">Oct 27<sup>th</sup>, 2014</time>
+      
+
+<span class="p-category categories">
+  
+    <a class='category' href='/blog/categories/coreos/'>coreos</a>, <a class='category' href='/blog/categories/devops/'>devops</a>, <a class='category' href='/blog/categories/haproxy/'>haproxy</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  <a class="short_url u-url" href="http://pierreozoux.github.io/s/13.htm">short url</a><br/>
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://pierreozoux.github.io/s/13.htm" data-via="pierreozoux" data-counturl="http://pierreozoux.github.io/s/13.htm" >Tweet</a>
+  
+  
+  
+</div>
+
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/08/13/coreos-on-hetzner/" title="Previous Post: CoreOS on Hetzner">&laquo; CoreOS on Hetzner</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/11/01/IndieHosters/" title="Next Post: Starting a New life - IndieHosters.net">Starting a New life - IndieHosters.net &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section class="h-card">
+  <h1>
+    <a class="p-name u-url" href="http://pierreozoux.github.io">Pierre Ozoux</a>
+  </h1>
+  
+  <img class="u-photo" src="https://www.gravatar.com/avatar/367d918791a831e447fb0057da804f51" alt="Gravatar of Pierre Ozoux " title="Gravatar of Pierre Ozoux" /><br/>
+  
+  
+  <h2>Bio</h2>
+  <p class="p-note">Defending Internet Freedom | devops | setting up <a href="https://IndieHosters.net">IndieHosters</a></p>
+  
+  
+  email: <a class="u-email" href="mailto:pierre@ozoux.net">pierre@ozoux.net</a><br/>
+  
+</section>
+
+<section>
+  <h2>Find me on other places!</h2>
+  <ul>
+    
+    <li><a href="https://twitter.com/pierreozoux" rel="me">@pierreozoux on Twitter</a></li>
+    
+    
+    <li><a href="https://github.com/pierreozoux" rel="me">Github</a></li>
+    
+    
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/11/20/Defense-for-lets-encrypt/">Defense for Let's Encrypt</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/01/IndieHosters/">Starting a New Life - IndieHosters.net</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/27/haproxy-coreos/">HAproxy on CoreOS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/13/coreos-on-hetzner/">CoreOS on Hetzner</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/02/permashortlinks/">Permashortlinks</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/pierreozoux">@pierreozoux</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'pierreozoux',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Pierre Ozoux -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

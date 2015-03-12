@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: coreos | Pierre-O's Blog]]></title>
+  <link href="http://pierreozoux.github.io/blog/categories/coreos/atom.xml" rel="self"/>
+  <link href="http://pierreozoux.github.io/"/>
+  <updated>2015-03-12T21:02:40+00:00</updated>
+  <id>http://pierreozoux.github.io/</id>
+  <author>
+    <name><![CDATA[Pierre Ozoux]]></name>
+    <email><![CDATA[pierre@ozoux.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[HAproxy on CoreOS]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/10/27/haproxy-coreos/"/>
+    <updated>2014-10-27T09:01:14+00:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/10/27/haproxy-coreos</id>
+    <content type="html"><![CDATA[<p>What are the best practices of running HAproxy on CoreOS?</p>
+
+<!-- more -->
+
+
+<h2>Dear fellow hackers,</h2>
+
+<p>I&rsquo;m discovering CoreOS, and I have to say, I enjoy it, it&rsquo;s really thrilling to learn all this new and exciting technology!</p>
+
+<p>I&rsquo;m trying to follow as much as possible best practices for Docker, 12-Factor App and so on. But for HAproxy, I&rsquo;m hitting the wall. So here is my problem:</p>
+
+<p>12-Factor app recommendation for logging is to have a process that sends out logs directly to stdout/stderr, and then your process management has to catch it somehow, and you can do whatever.</p>
+
+<p>In the other hand, Docker recommendation is to run just one process per container.</p>
+
+<p>Until now, I was totally fine. Systemd was catching output from my docker container, and everybody was happy. But what about HAproxy?</p>
+
+<p>So, I realised it was impossible to log to stdout except in debug mode. This is the solution I&rsquo;ll use for now, but I feel it&rsquo;s not that elegant&hellip;</p>
+
+<p>The other solution I found would be to run a container with rsyslogd listening on docker_gateway:514, and then configure HAproxy to send it&rsquo;s UDP packets to this gateway&hellip; But well, it&rsquo;s not that elegant neither..</p>
+
+<p>I&rsquo;m open for suggestions to make it wonderful!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CoreOS on Hetzner]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/08/13/coreos-on-hetzner/"/>
+    <updated>2014-08-13T21:01:14+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/08/13/coreos-on-hetzner</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m going baremetal \o/</p>
+
+<!-- more -->
+
+
+<p>I followed this <a href="https://www.penflip.com/jun/iilab-systems/blob/master/CoreOS-on-Hetzner-Bare-Metal.txt">piece of instructions</a>.</p>
+
+<p>And there is also the <a href="http://wiki.hetzner.de/index.php/Installimage/en">wiki</a> that can help :)</p>
+
+<p>```bash
+wget <a href="https://raw.githubusercontent.com/coreos/init/master/bin/coreos-install">https://raw.githubusercontent.com/coreos/init/master/bin/coreos-install</a>
+chmod +x coreos-install
+cat > config&lt;&lt;EOF</p>
+
+<h1>cloud-config</h1>
+
+<p>ssh_authorized_keys:
+ &ndash; mykey
+EOF
+./coreos-install -d /dev/sda -C stable -c config
+reboot
+ssh <a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x63;&#111;&#114;&#x65;&#x40;&#x78;&#46;&#x78;&#x2e;&#x78;&#x2e;&#120;">&#x63;&#x6f;&#114;&#x65;&#x40;&#120;&#46;&#120;&#x2e;&#x78;&#x2e;&#x78;</a>
+```</p>
+
+<p>That&rsquo;s it \o/</p>
+]]></content>
+  </entry>
+  
+</feed>

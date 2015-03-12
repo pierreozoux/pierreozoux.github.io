@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: indieweb | Pierre-O's Blog]]></title>
+  <link href="http://pierreozoux.github.io/blog/categories/indieweb/atom.xml" rel="self"/>
+  <link href="http://pierreozoux.github.io/"/>
+  <updated>2015-03-12T21:02:40+00:00</updated>
+  <id>http://pierreozoux.github.io/</id>
+  <author>
+    <name><![CDATA[Pierre Ozoux]]></name>
+    <email><![CDATA[pierre@ozoux.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[permashortlinks]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/08/02/permashortlinks/"/>
+    <updated>2014-08-02T10:44:44+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/08/02/permashortlinks</id>
+    <content type="html"><![CDATA[<p>Just for fun, I did a permashortlinks engine for Octopress \o/</p>
+
+<!-- more -->
+
+
+<p>Add <code>jekyll-redirect-from</code> to your gemfile. Add it to your</p>
+
+<p><code>bash _config.yml
+gems:
+  - jekyll-redirect-from
+</code></p>
+
+<p>Modify a bit your Rakefile:
+```bash diff Rakefile
+diff &mdash;git a/Rakefile b/Rakefile
+index 9fb3783..8c01394 100644
+&mdash;&ndash; a/Rakefile
++++ b/Rakefile
+@@ -107,6 +107,9 @@ task :new_post, :title do |t, args|
+   if File.exist?(filename)</p>
+
+<pre><code> abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+</code></pre>
+
+<p>   end
++  redirect = Dir.glob(&ldquo;public/s/*&rdquo;).sort_by{|s| s[/\d+/].to_i }.last
++  redirect_number = /public\/s\/(\d+).htm/.match(redirect)[1].to_i + 1
++  redirect.gsub!(/\d+/, redirect_number.to_s).gsub!(/public/, &ldquo;&rdquo;)
+   puts &ldquo;Creating new post: #{filename}&rdquo;
+   open(filename, &lsquo;w&rsquo;) do |post|</p>
+
+<pre><code> post.puts "---"
+</code></pre>
+
+<p>@@ -115,6 +118,7 @@ task :new_post, :title do |t, args|</p>
+
+<pre><code> post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
+ post.puts "comments: true"
+ post.puts "categories: "
+</code></pre>
+
+<ul>
+<li> post.puts &ldquo;redirect_from: #{redirect}&rdquo;
+ post.puts &ldquo;&mdash;&ndash;&rdquo;
+end
+end
+```</li>
+</ul>
+
+
+<p>Add a <code>redirect_from</code> field to your older posts</p>
+
+<p>And that&rsquo;s it. Now, when you create a post, and it will have automatically a shortlink.
+In my case, this article has the following permashortlink: <a href="www.pierre-o.fr/s/9.htm">http://www.pierre-o.fr/s/9.htm</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Web Sign In and h-card]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/08/01/web-sign-in/"/>
+    <updated>2014-08-01T22:57:06+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/08/01/web-sign-in</id>
+    <content type="html"><![CDATA[<p>Now that I own my <a href="http://localhost:4000/blog/2014/07/31/domain-name-and-github/">domain name</a>,
+let&rsquo;s setup <a href="http://indiewebcamp.com/How_to_set_up_web_sign-in_on_your_own_domain">Web Sign In</a> with Octopress.
+We&rsquo;ll also add an h-card, so that I own my digital identity.</p>
+
+<!-- more -->
+
+
+<h2>1 &ndash; add the asides</h2>
+
+<p>This one is easy, head to your <code>source/_includes/asides</code>, and add the following file:</p>
+
+<p><div><script src='https://gist.github.com/253abe2208270a08918e.js?file=about_me.html'></script>
+<noscript><pre><code>&lt;section class=&quot;h-card&quot;&gt;
+  &lt;h1&gt;
+    &lt;a class=&quot;p-name u-url&quot; href=&quot;{{ site.url }}&quot;&gt;{{ site.author }}&lt;/a&gt;
+  &lt;/h1&gt;
+  {% if site.gravatar_email %}
+  &lt;img class=&quot;u-photo&quot; src=&quot;{% gravatar_image %}&quot; alt=&quot;Gravatar of {{ site.author }} &quot; title=&quot;Gravatar of {{ site.author }}&quot; /&gt;&lt;br/&gt;
+  {% endif %}
+  {% if site.bio %}
+  &lt;h2&gt;Bio&lt;/h2&gt;
+  &lt;p class=&quot;p-note&quot;&gt;{{ site.bio }}&lt;/p&gt;
+  {% endif %}
+  {% if site.email %}
+  email: &lt;a class=&quot;u-email&quot; href=&quot;mailto:{{ site.email }}&quot;&gt;{{ site.email }}&lt;/a&gt;&lt;br/&gt;
+  {% endif %}
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h2&gt;Find me on other places!&lt;/h2&gt;
+  &lt;ul&gt;
+    {% if site.twitter_user %}
+    &lt;li&gt;&lt;a href=&quot;https://twitter.com/{{site.twitter_user}}&quot; rel=&quot;me&quot;&gt;@{{site.twitter_user}} on Twitter&lt;/a&gt;&lt;/li&gt;
+    {% endif %}
+    {% if site.github_user %}
+    &lt;li&gt;&lt;a href=&quot;https://github.com/{{site.github_user}}&quot; rel=&quot;me&quot;&gt;Github&lt;/a&gt;&lt;/li&gt;
+    {% endif %}
+    {% if site.googleplus_user %}
+    &lt;li&gt;&lt;a href=&quot;https://google.com/+{{site.googleplus_user}}&quot; rel=&quot;me&quot;&gt;Google&lt;/a&gt;&lt;/li&gt;
+    {% endif %}
+  &lt;/ul&gt;
+&lt;/section&gt;
+</code></pre></noscript></div>
+</p>
+
+<p>Just add <code>asides/about_me.html</code> to your <code>_config.yml</code> in <code>default_asides</code>, and that&rsquo;s it!</p>
+
+<p>Profit :) You can now sign in the <a href="http://indiewebcamp.com/Special:UserLogin">IndieWebCamp wiki</a> \o/</p>
+
+<h2>2 &ndash; Use gravatar for your image (optional)</h2>
+
+<p>If you want a picture of you also, I took the decision to use gravatar. To make this working,
+just <code>cd plugins; wget https://raw.githubusercontent.com/joet3ch/gravatar-octopress/master/gravatar.rb</code></p>
+
+<p>Thanks <a href="https://github.com/joet3ch/gravatar-octopress">joet3ch</a> for his plugin :)
+(Unfortunatelly, I&rsquo;ll not be able to webmention him because, he is not part of IndieWeb.. We&rsquo;ll learn about webmention soon!)</p>
+
+<h2>Final thoughts</h2>
+
+<p>I now control my identity online!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Domain name and github]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/07/31/domain-name-and-github/"/>
+    <updated>2014-07-31T14:34:38+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/07/31/domain-name-and-github</id>
+    <content type="html"><![CDATA[<p>This is the first article on how to IndieWebifyme with Octopress and GitHub. This is the first part of the level 1,
+get a domain name.</p>
+
+<!-- more -->
+
+
+<h2>Prerequisites</h2>
+
+<p>To start, I&rsquo;ll assume you have a working octopress with github pages.</p>
+
+<h2>1 &ndash; Domain name</h2>
+
+<p>So to IndieWebify me, the first step is the domain name. I bought <a href="http://www.pierre-o.fr">pierre-o.fr</a> for 5€/y.
+I use <a href="https://www.bookmyname.com/">bookmyname</a> as registrar.
+I find it is the cheapest, service is simple and working.</p>
+
+<h2>2 &ndash; CNAME in the DNS registrar</h2>
+
+<p>Go to your registrar (or DNS provider) and configure the CNAME to point to your github username.
+<code>bash config for DNS
+www CNAME pierreozoux.github.io
+</code></p>
+
+<h2>3 &ndash; CNAME file in the project</h2>
+
+<p>Then, just add a CNAME file into your project, in the source folder, with this content:
+<code>bash CNAME
+www.pierre-o.fr
+</code></p>
+
+<p>That&rsquo;s it! Commit your change, generate and deploy!</p>
+
+<h2>Final thoughts</h2>
+
+<p>I now own my online indentity. The domain name that represent the entry point of my online indentity belongs to me.
+Nobody can close this service, ask me 100€ for that, or censor me from now on! Of course we can discuss this
+concept with the light that DNS is centralised, but it is a lot better than a namespace behind facebook walls!</p>
+
+<p>If you have any questions/doubts, please, let me know!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Moving to Indie Web]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/07/30/indieweb/"/>
+    <updated>2014-07-30T18:02:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/07/30/indieweb</id>
+    <content type="html"><![CDATA[<p>After <a href="https://github.com/pierreozoux/ideas">searching</a> <a href="http://pierre.oz.free.fr/">a long time</a> on how to
+build/install/join a federated social web, I found the Graal. Lately, I met Michiel B. de Jong, and
+<a href="https://michielbdejong.com/blog/8.html">he convinced</a> me to switch to
+<a href="http://indiewebify.me/">Indie web</a>! I&rsquo;ll write posts on how I&rsquo;m doing it!</p>
+
+<p>My idea right now is to use Octopress, hosted by GitHub pages. I plan to use <a href="http://webmention.io/">webmention.io</a> and
+<a href="https://www.brid.gy/">brid.gy</a></p>
+
+<p>I hope you&rsquo;ll enjoy, and please let me know if you have questions or want to know more!</p>
+]]></content>
+  </entry>
+  
+</feed>

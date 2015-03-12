@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: indiehosters | Pierre-O's Blog]]></title>
+  <link href="http://pierreozoux.github.io/blog/categories/indiehosters/atom.xml" rel="self"/>
+  <link href="http://pierreozoux.github.io/"/>
+  <updated>2015-03-12T21:02:40+00:00</updated>
+  <id>http://pierreozoux.github.io/</id>
+  <author>
+    <name><![CDATA[Pierre Ozoux]]></name>
+    <email><![CDATA[pierre@ozoux.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Starting a New life - IndieHosters.net]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/11/01/IndieHosters/"/>
+    <updated>2014-11-01T12:01:14+00:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/11/01/IndieHosters</id>
+    <content type="html"><![CDATA[<p>Starting a new project and I&rsquo;m happy to share reasons with you! And why I do believe it is the best way for me to make Internet a better place.</p>
+
+<!-- more -->
+
+
+<h2>Helping..</h2>
+
+<p>Since HighSchool, I have this feeling that I need to help. Maybe because I have this luck of already fullfilling the lower needs. But the issue is how. Since then, I&rsquo;m looking for ways to do it. Never found it really. I was always doubting about my studies, my jobs, my activities. It caused me some troubles. But at the end of university, I understood something.</p>
+
+<h3>Irak war</h3>
+
+<p>This is maybe crazy, but when I realized the power of media, it was because of the Irak war. American people were <a href="https://en.wikipedia.org/wiki/Public_opinion_on_the_Iraq_War#American_public_opinion_before_start_of_the_war">manipulated to accept this war</a>&hellip; At this point I understood the power of media.</p>
+
+<h3>EvryOne</h3>
+
+<p>During my associative work at <a href="http://www.evryone.com/index/index.php">EvryOne</a>, I was really interested on Free software. I was starting to follow adventures of Stallman, history of Linux, then <a href="http://www.laquadrature.net/en">La quadrature du net</a>, <a href="https://fr.wikipedia.org/wiki/Benjamin_Bayart">Benjamin Bayart</a> and his <a href="http://www.fdn.fr/-Conferences-.html">great conferences</a>, <a href="http://reflets.info/">reflets.info</a>, and <a href="http://www.passageenseine.org/Passage/PSES-2014">Pas sage en seine</a> and <a href="http://www.iletaitunefoisinternet.fr/">other great videos</a>! Adn obviously the famous <a href="https://freedomboxfoundation.org/">FreedomBox</a>.</p>
+
+<p>I understood the great deal with Free Software, and the power of Internet! As working for a radio, I was also interested in Pirate Movement in France from the 80s. And something great happened with Internet, it became mainstream before Politics understood the power of this media. (not like Radio where in France they created CSA to censor it..)</p>
+
+<h3>Distributed social network</h3>
+
+<p>At this time, I believed in Distributed social network, this was THE solution. As media is a way to &ldquo;manipulate people&rdquo;, and Internet is the greatest and free media, then it was perfect, I knew how to help. I have to work to defend this freedom. At this time, the idea was clear in my head, but how to do it? Right? I was not really a developper. I didn&rsquo;t have any friends in this area. I was a bit by myself, fascinated, and finally found what I want to do. But had no idea how to start!</p>
+
+<h4>I tried out some stuff</h4>
+
+<p>I started <a href="http://pierre.oz.free.fr/">a blog</a>, I <a href="https://duckduckgo.com/?q=ozoux+site%3Agreenit.fr">contributed a bit to greenit.fr</a>, started this blog, created <a href="https://www.facebook.com/photo.php?fbid=375068585949339&amp;set=o.380991128668990&amp;type=3&amp;theater">the first Ouishare event in lisbon</a>.</p>
+
+<p>But for me the solution was really that people should host their data at home, on their <a href="https://github.com/pierreozoux/patissier">RasPi</a>!</p>
+
+<p>And so, after hanging out with <a href="https://twitter.com/diffcunha">Diogo</a>, <a href="https://twitter.com/joaojeronimo">Joao</a>, <a href="https://twitter.com/NeCkEr">Bruno</a> and <a href="https://twitter.com/coot_">Marcin</a>, we decided to create a meetup about <a href="http://www.meetup.com/Internet-Freedom-Lisbon/">Internet Freedom</a>.</p>
+
+<p>At this time, I knew I was on the right track!</p>
+
+<h3>The IndieWeb</h3>
+
+<p>And in June, I met <a href="https://michielbdejong.com/">Michiel</a>, that created <a href="https://unhosted.org/">unhosted</a>, and I was following since some years. He introduced me to IndieWeb, and so it was solving the isssue of the Distributed social network. I started <a href="http://pierre-o.fr/blog/2014/07/30/indieweb/">right away</a> :)</p>
+
+<p>But well it was still missing the bit on how to make people host their data. Since 2 years, I was already hosting <a href="http://denishain.fr/">3</a> <a href="http://daytrippers.pt">friends</a> <a href="http://celestemariposa.com/">blog</a> on my RasPi. But it was not scallable..</p>
+
+<h3>IndieHosters</h3>
+
+<p>So in June, Michiel spent some days at home for an <a href="http://redecentralize.org/lisbon/2014/08/09/One-day-Unhosted.html">unhosted meetup</a>. And he convinced me to let my job to start <a href="https://indiehosters.net">IndieHosters</a> with him.</p>
+
+<p>So, after working 2 years at <a href="http://seedrs.com/">Seedrs</a>, where I increased my geekitude in a amazing way: started a github account, contributing to chef, packer, learning RoR programming and DevOps, I felt ready to start this project!</p>
+
+<p>And so the objective of IndieHosters is to help people using Free software by providing them the hosting. And our main objective is freedom, not profit!</p>
+
+<p>I hope you like our project, and if you also believe in it, please let us know.</p>
+
+<p>I truly believe that it&rsquo;s for me, the best way to help to make the Internet a better place, and so the world! This is the greatest I can make from my 8h a day of available brain&rsquo;s time!</p>
+
+<p>I&rsquo;m really excited about this project and I hope you too!</p>
+]]></content>
+  </entry>
+  
+</feed>

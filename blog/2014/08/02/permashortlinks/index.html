@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Permashortlinks - Pierre-O's Blog</title>
+  <meta name="author" content="Pierre Ozoux">
+
+  
+  <meta name="description" content="Permashortlinks Aug 2nd, 2014 Just for fun, I did a permashortlinks engine for Octopress \o/ Add jekyll-redirect-from to your gemfile. Add it to &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+  <link rel="canonical" href="http://pierreozoux.github.io/blog/2014/08/02/permashortlinks">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Pierre-O's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pierre-O's Blog</a></h1>
+  
+    <h2>My personnal blog about IT stuff</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://www.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="site:pierreozoux.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search&hellip;"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="h-entry hentry" role="article">
+  
+  <header>
+    
+      <h1 class="p-name entry-title">Permashortlinks</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time class="dt-published" datetime="2014-08-02T10:44:44+01:00" pubdate data-updated="true">Aug 2<sup>nd</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="e-content entry-content"><p>Just for fun, I did a permashortlinks engine for Octopress \o/</p>
+
+<!-- more -->
+
+
+<p>Add <code>jekyll-redirect-from</code> to your gemfile. Add it to your</p>
+
+<figure class='code'><figcaption><span>_config.yml</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>gems:
+</span><span class='line'>  - jekyll-redirect-from
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Modify a bit your Rakefile:</p>
+
+<figure class='code'><figcaption><span>diff Rakefile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>diff --git a/Rakefile b/Rakefile
+</span><span class='line'>index 9fb3783..8c01394 100644
+</span><span class='line'>--- a/Rakefile
+</span><span class='line'>+++ b/Rakefile
+</span><span class='line'>@@ -107,6 +107,9 @@ task :new_post, :title <span class="k">do</span> <span class="p">|</span>t, args<span class="p">|</span>
+</span><span class='line'>   <span class="k">if </span>File.exist?<span class="o">(</span>filename<span class="o">)</span>
+</span><span class='line'>     abort<span class="o">(</span><span class="s2">&quot;rake aborted!&quot;</span><span class="o">)</span> <span class="k">if </span>ask<span class="o">(</span><span class="s2">&quot;#{filename} already exists. Do you want to overwrite?&quot;</span>, <span class="o">[</span><span class="s1">&#39;y&#39;</span>, <span class="s1">&#39;n&#39;</span><span class="o">])</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span>
+</span><span class='line'>   end
+</span><span class='line'>+  <span class="nv">redirect</span> <span class="o">=</span> Dir.glob<span class="o">(</span><span class="s2">&quot;public/s/*&quot;</span><span class="o">)</span>.sort_by<span class="o">{</span><span class="p">|</span>s<span class="p">|</span> s<span class="o">[</span>/<span class="se">\d</span>+/<span class="o">]</span>.to_i <span class="o">}</span>.last
+</span><span class='line'>+  <span class="nv">redirect_number</span> <span class="o">=</span> /public<span class="se">\/</span>s<span class="se">\/</span><span class="o">(</span><span class="se">\d</span>+<span class="o">)</span><span class="se">\.</span>htm/.match<span class="o">(</span>redirect<span class="o">)[</span>1<span class="o">]</span>.to_i + 1
+</span><span class='line'>+  redirect.gsub!<span class="o">(</span>/<span class="se">\d</span>+/, redirect_number.to_s<span class="o">)</span>.gsub!<span class="o">(</span>/public/, <span class="s2">&quot;&quot;</span><span class="o">)</span>
+</span><span class='line'>   puts <span class="s2">&quot;Creating new post: #{filename}&quot;</span>
+</span><span class='line'>   open<span class="o">(</span>filename, <span class="s1">&#39;w&#39;</span><span class="o">)</span> <span class="k">do</span> <span class="p">|</span>post<span class="p">|</span>
+</span><span class='line'>     post.puts <span class="s2">&quot;---&quot;</span>
+</span><span class='line'>@@ -115,6 +118,7 @@ task :new_post, :title <span class="k">do</span> <span class="p">|</span>t, args<span class="p">|</span>
+</span><span class='line'>     post.puts <span class="s2">&quot;date: #{Time.now.strftime(&#39;%Y-%m-%d %H:%M:%S %z&#39;)}&quot;</span>
+</span><span class='line'>     post.puts <span class="s2">&quot;comments: true&quot;</span>
+</span><span class='line'>     post.puts <span class="s2">&quot;categories: &quot;</span>
+</span><span class='line'>+    post.puts <span class="s2">&quot;redirect_from: #{redirect}&quot;</span>
+</span><span class='line'>     post.puts <span class="s2">&quot;---&quot;</span>
+</span><span class='line'>   end
+</span><span class='line'> end
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Add a <code>redirect_from</code> field to your older posts</p>
+
+<p>And that&rsquo;s it. Now, when you create a post, and it will have automatically a shortlink.
+In my case, this article has the following permashortlink: <a href="www.pierre-o.fr/s/9.htm">http://www.pierre-o.fr/s/9.htm</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="p-author fn">Pierre Ozoux</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time class="dt-published" datetime="2014-08-02T10:44:44+01:00" pubdate data-updated="true">Aug 2<sup>nd</sup>, 2014</time>
+      
+
+<span class="p-category categories">
+  
+    <a class='category' href='/blog/categories/indieweb/'>indieweb</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  <a class="short_url u-url" href="http://pierreozoux.github.io/s/9.htm">short url</a><br/>
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://pierreozoux.github.io/s/9.htm" data-via="pierreozoux" data-counturl="http://pierreozoux.github.io/s/9.htm" >Tweet</a>
+  
+  
+  
+</div>
+
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/08/01/web-sign-in/" title="Previous Post: Web Sign In and h-card">&laquo; Web Sign In and h-card</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/08/13/coreos-on-hetzner/" title="Next Post: CoreOS on Hetzner">CoreOS on Hetzner &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section class="h-card">
+  <h1>
+    <a class="p-name u-url" href="http://pierreozoux.github.io">Pierre Ozoux</a>
+  </h1>
+  
+  <img class="u-photo" src="https://www.gravatar.com/avatar/367d918791a831e447fb0057da804f51" alt="Gravatar of Pierre Ozoux " title="Gravatar of Pierre Ozoux" /><br/>
+  
+  
+  <h2>Bio</h2>
+  <p class="p-note">Defending Internet Freedom | devops | setting up <a href="https://IndieHosters.net">IndieHosters</a></p>
+  
+  
+  email: <a class="u-email" href="mailto:pierre@ozoux.net">pierre@ozoux.net</a><br/>
+  
+</section>
+
+<section>
+  <h2>Find me on other places!</h2>
+  <ul>
+    
+    <li><a href="https://twitter.com/pierreozoux" rel="me">@pierreozoux on Twitter</a></li>
+    
+    
+    <li><a href="https://github.com/pierreozoux" rel="me">Github</a></li>
+    
+    
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/11/20/Defense-for-lets-encrypt/">Defense for Let's Encrypt</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/01/IndieHosters/">Starting a New Life - IndieHosters.net</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/27/haproxy-coreos/">HAproxy on CoreOS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/13/coreos-on-hetzner/">CoreOS on Hetzner</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/02/permashortlinks/">Permashortlinks</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/pierreozoux">@pierreozoux</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'pierreozoux',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Pierre Ozoux -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

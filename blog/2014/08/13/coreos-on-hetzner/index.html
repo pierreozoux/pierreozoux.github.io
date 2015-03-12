@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>CoreOS on Hetzner - Pierre-O's Blog</title>
+  <meta name="author" content="Pierre Ozoux">
+
+  
+  <meta name="description" content="CoreOS on Hetzner Aug 13th, 2014 I&rsquo;m going baremetal \o/ I followed this piece of instructions. And there is also the wiki that can help :) 1 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+  <link rel="canonical" href="http://pierreozoux.github.io/blog/2014/08/13/coreos-on-hetzner">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Pierre-O's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pierre-O's Blog</a></h1>
+  
+    <h2>My personnal blog about IT stuff</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://www.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="site:pierreozoux.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search&hellip;"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="h-entry hentry" role="article">
+  
+  <header>
+    
+      <h1 class="p-name entry-title">CoreOS on Hetzner</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time class="dt-published" datetime="2014-08-13T21:01:14+01:00" pubdate data-updated="true">Aug 13<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="e-content entry-content"><p>I&rsquo;m going baremetal \o/</p>
+
+<!-- more -->
+
+
+<p>I followed this <a href="https://www.penflip.com/jun/iilab-systems/blob/master/CoreOS-on-Hetzner-Bare-Metal.txt">piece of instructions</a>.</p>
+
+<p>And there is also the <a href="http://wiki.hetzner.de/index.php/Installimage/en">wiki</a> that can help :)</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>wget https://raw.githubusercontent.com/coreos/init/master/bin/coreos-install
+</span><span class='line'>chmod +x coreos-install
+</span><span class='line'>cat &gt; config<span class="s">&lt;&lt;EOF</span>
+</span><span class='line'><span class="s">#cloud-config</span>
+</span><span class='line'><span class="s">ssh_authorized_keys:</span>
+</span><span class='line'><span class="s"> - mykey</span>
+</span><span class='line'><span class="s">EOF</span>
+</span><span class='line'>./coreos-install -d /dev/sda -C stable -c config
+</span><span class='line'>reboot
+</span><span class='line'>ssh core@x.x.x.x
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it \o/</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="p-author fn">Pierre Ozoux</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time class="dt-published" datetime="2014-08-13T21:01:14+01:00" pubdate data-updated="true">Aug 13<sup>th</sup>, 2014</time>
+      
+
+<span class="p-category categories">
+  
+    <a class='category' href='/blog/categories/coreos/'>coreos</a>, <a class='category' href='/blog/categories/devops/'>devops</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  <a class="short_url u-url" href="http://pierreozoux.github.io/s/12.htm">short url</a><br/>
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://pierreozoux.github.io/s/12.htm" data-via="pierreozoux" data-counturl="http://pierreozoux.github.io/s/12.htm" >Tweet</a>
+  
+  
+  
+</div>
+
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/08/02/permashortlinks/" title="Previous Post: permashortlinks">&laquo; permashortlinks</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/10/27/haproxy-coreos/" title="Next Post: HAproxy on CoreOS">HAproxy on CoreOS &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section class="h-card">
+  <h1>
+    <a class="p-name u-url" href="http://pierreozoux.github.io">Pierre Ozoux</a>
+  </h1>
+  
+  <img class="u-photo" src="https://www.gravatar.com/avatar/367d918791a831e447fb0057da804f51" alt="Gravatar of Pierre Ozoux " title="Gravatar of Pierre Ozoux" /><br/>
+  
+  
+  <h2>Bio</h2>
+  <p class="p-note">Defending Internet Freedom | devops | setting up <a href="https://IndieHosters.net">IndieHosters</a></p>
+  
+  
+  email: <a class="u-email" href="mailto:pierre@ozoux.net">pierre@ozoux.net</a><br/>
+  
+</section>
+
+<section>
+  <h2>Find me on other places!</h2>
+  <ul>
+    
+    <li><a href="https://twitter.com/pierreozoux" rel="me">@pierreozoux on Twitter</a></li>
+    
+    
+    <li><a href="https://github.com/pierreozoux" rel="me">Github</a></li>
+    
+    
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/11/20/Defense-for-lets-encrypt/">Defense for Let's Encrypt</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/01/IndieHosters/">Starting a New Life - IndieHosters.net</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/27/haproxy-coreos/">HAproxy on CoreOS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/13/coreos-on-hetzner/">CoreOS on Hetzner</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/02/permashortlinks/">Permashortlinks</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/pierreozoux">@pierreozoux</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'pierreozoux',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Pierre Ozoux -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

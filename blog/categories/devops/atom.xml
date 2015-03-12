@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: devops | Pierre-O's Blog]]></title>
+  <link href="http://pierreozoux.github.io/blog/categories/devops/atom.xml" rel="self"/>
+  <link href="http://pierreozoux.github.io/"/>
+  <updated>2015-03-12T21:02:40+00:00</updated>
+  <id>http://pierreozoux.github.io/</id>
+  <author>
+    <name><![CDATA[Pierre Ozoux]]></name>
+    <email><![CDATA[pierre@ozoux.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Starting a New life - IndieHosters.net]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/11/01/IndieHosters/"/>
+    <updated>2014-11-01T12:01:14+00:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/11/01/IndieHosters</id>
+    <content type="html"><![CDATA[<p>Starting a new project and I&rsquo;m happy to share reasons with you! And why I do believe it is the best way for me to make Internet a better place.</p>
+
+<!-- more -->
+
+
+<h2>Helping..</h2>
+
+<p>Since HighSchool, I have this feeling that I need to help. Maybe because I have this luck of already fullfilling the lower needs. But the issue is how. Since then, I&rsquo;m looking for ways to do it. Never found it really. I was always doubting about my studies, my jobs, my activities. It caused me some troubles. But at the end of university, I understood something.</p>
+
+<h3>Irak war</h3>
+
+<p>This is maybe crazy, but when I realized the power of media, it was because of the Irak war. American people were <a href="https://en.wikipedia.org/wiki/Public_opinion_on_the_Iraq_War#American_public_opinion_before_start_of_the_war">manipulated to accept this war</a>&hellip; At this point I understood the power of media.</p>
+
+<h3>EvryOne</h3>
+
+<p>During my associative work at <a href="http://www.evryone.com/index/index.php">EvryOne</a>, I was really interested on Free software. I was starting to follow adventures of Stallman, history of Linux, then <a href="http://www.laquadrature.net/en">La quadrature du net</a>, <a href="https://fr.wikipedia.org/wiki/Benjamin_Bayart">Benjamin Bayart</a> and his <a href="http://www.fdn.fr/-Conferences-.html">great conferences</a>, <a href="http://reflets.info/">reflets.info</a>, and <a href="http://www.passageenseine.org/Passage/PSES-2014">Pas sage en seine</a> and <a href="http://www.iletaitunefoisinternet.fr/">other great videos</a>! Adn obviously the famous <a href="https://freedomboxfoundation.org/">FreedomBox</a>.</p>
+
+<p>I understood the great deal with Free Software, and the power of Internet! As working for a radio, I was also interested in Pirate Movement in France from the 80s. And something great happened with Internet, it became mainstream before Politics understood the power of this media. (not like Radio where in France they created CSA to censor it..)</p>
+
+<h3>Distributed social network</h3>
+
+<p>At this time, I believed in Distributed social network, this was THE solution. As media is a way to &ldquo;manipulate people&rdquo;, and Internet is the greatest and free media, then it was perfect, I knew how to help. I have to work to defend this freedom. At this time, the idea was clear in my head, but how to do it? Right? I was not really a developper. I didn&rsquo;t have any friends in this area. I was a bit by myself, fascinated, and finally found what I want to do. But had no idea how to start!</p>
+
+<h4>I tried out some stuff</h4>
+
+<p>I started <a href="http://pierre.oz.free.fr/">a blog</a>, I <a href="https://duckduckgo.com/?q=ozoux+site%3Agreenit.fr">contributed a bit to greenit.fr</a>, started this blog, created <a href="https://www.facebook.com/photo.php?fbid=375068585949339&amp;set=o.380991128668990&amp;type=3&amp;theater">the first Ouishare event in lisbon</a>.</p>
+
+<p>But for me the solution was really that people should host their data at home, on their <a href="https://github.com/pierreozoux/patissier">RasPi</a>!</p>
+
+<p>And so, after hanging out with <a href="https://twitter.com/diffcunha">Diogo</a>, <a href="https://twitter.com/joaojeronimo">Joao</a>, <a href="https://twitter.com/NeCkEr">Bruno</a> and <a href="https://twitter.com/coot_">Marcin</a>, we decided to create a meetup about <a href="http://www.meetup.com/Internet-Freedom-Lisbon/">Internet Freedom</a>.</p>
+
+<p>At this time, I knew I was on the right track!</p>
+
+<h3>The IndieWeb</h3>
+
+<p>And in June, I met <a href="https://michielbdejong.com/">Michiel</a>, that created <a href="https://unhosted.org/">unhosted</a>, and I was following since some years. He introduced me to IndieWeb, and so it was solving the isssue of the Distributed social network. I started <a href="http://pierre-o.fr/blog/2014/07/30/indieweb/">right away</a> :)</p>
+
+<p>But well it was still missing the bit on how to make people host their data. Since 2 years, I was already hosting <a href="http://denishain.fr/">3</a> <a href="http://daytrippers.pt">friends</a> <a href="http://celestemariposa.com/">blog</a> on my RasPi. But it was not scallable..</p>
+
+<h3>IndieHosters</h3>
+
+<p>So in June, Michiel spent some days at home for an <a href="http://redecentralize.org/lisbon/2014/08/09/One-day-Unhosted.html">unhosted meetup</a>. And he convinced me to let my job to start <a href="https://indiehosters.net">IndieHosters</a> with him.</p>
+
+<p>So, after working 2 years at <a href="http://seedrs.com/">Seedrs</a>, where I increased my geekitude in a amazing way: started a github account, contributing to chef, packer, learning RoR programming and DevOps, I felt ready to start this project!</p>
+
+<p>And so the objective of IndieHosters is to help people using Free software by providing them the hosting. And our main objective is freedom, not profit!</p>
+
+<p>I hope you like our project, and if you also believe in it, please let us know.</p>
+
+<p>I truly believe that it&rsquo;s for me, the best way to help to make the Internet a better place, and so the world! This is the greatest I can make from my 8h a day of available brain&rsquo;s time!</p>
+
+<p>I&rsquo;m really excited about this project and I hope you too!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HAproxy on CoreOS]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/10/27/haproxy-coreos/"/>
+    <updated>2014-10-27T09:01:14+00:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/10/27/haproxy-coreos</id>
+    <content type="html"><![CDATA[<p>What are the best practices of running HAproxy on CoreOS?</p>
+
+<!-- more -->
+
+
+<h2>Dear fellow hackers,</h2>
+
+<p>I&rsquo;m discovering CoreOS, and I have to say, I enjoy it, it&rsquo;s really thrilling to learn all this new and exciting technology!</p>
+
+<p>I&rsquo;m trying to follow as much as possible best practices for Docker, 12-Factor App and so on. But for HAproxy, I&rsquo;m hitting the wall. So here is my problem:</p>
+
+<p>12-Factor app recommendation for logging is to have a process that sends out logs directly to stdout/stderr, and then your process management has to catch it somehow, and you can do whatever.</p>
+
+<p>In the other hand, Docker recommendation is to run just one process per container.</p>
+
+<p>Until now, I was totally fine. Systemd was catching output from my docker container, and everybody was happy. But what about HAproxy?</p>
+
+<p>So, I realised it was impossible to log to stdout except in debug mode. This is the solution I&rsquo;ll use for now, but I feel it&rsquo;s not that elegant&hellip;</p>
+
+<p>The other solution I found would be to run a container with rsyslogd listening on docker_gateway:514, and then configure HAproxy to send it&rsquo;s UDP packets to this gateway&hellip; But well, it&rsquo;s not that elegant neither..</p>
+
+<p>I&rsquo;m open for suggestions to make it wonderful!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CoreOS on Hetzner]]></title>
+    <link href="http://pierreozoux.github.io/blog/2014/08/13/coreos-on-hetzner/"/>
+    <updated>2014-08-13T21:01:14+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2014/08/13/coreos-on-hetzner</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m going baremetal \o/</p>
+
+<!-- more -->
+
+
+<p>I followed this <a href="https://www.penflip.com/jun/iilab-systems/blob/master/CoreOS-on-Hetzner-Bare-Metal.txt">piece of instructions</a>.</p>
+
+<p>And there is also the <a href="http://wiki.hetzner.de/index.php/Installimage/en">wiki</a> that can help :)</p>
+
+<p>```bash
+wget <a href="https://raw.githubusercontent.com/coreos/init/master/bin/coreos-install">https://raw.githubusercontent.com/coreos/init/master/bin/coreos-install</a>
+chmod +x coreos-install
+cat > config&lt;&lt;EOF</p>
+
+<h1>cloud-config</h1>
+
+<p>ssh_authorized_keys:
+ &ndash; mykey
+EOF
+./coreos-install -d /dev/sda -C stable -c config
+reboot
+ssh <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#x63;&#x6f;&#x72;&#x65;&#x40;&#120;&#x2e;&#120;&#46;&#120;&#46;&#120;">&#99;&#111;&#114;&#101;&#64;&#120;&#x2e;&#x78;&#x2e;&#x78;&#46;&#x78;</a>
+```</p>
+
+<p>That&rsquo;s it \o/</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Contribution to Packer]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/09/06/contribution-to-packer/"/>
+    <updated>2013-09-06T11:02:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/09/06/contribution-to-packer</id>
+    <content type="html"><![CDATA[<p>I wanted to introduce you my attempt to create a shared repository for Packer Templates. Please, feel free to comment!</p>
+
+<!-- more -->
+
+
+<p>Here it is on GitHub : <a href="https://github.com/pierreozoux/packer-warehouse">Packer-warehouse</a></p>
+
+<p>I really would like to hear you on how you would use it, do you think it&rsquo;s convenient.. What is missing? Thanks for your help! And if you like it, spread the word!</p>
+
+<p>And a little bonus <a href="/presentations/packer.html">the presentation</a> I gave yesterday about Packer at <a href="http://www.meetup.com/require-lx/">require(&lsquo;lx&rsquo;)</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My knife was slow, so I sharped it!]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/08/01/my-knife-was-slow/"/>
+    <updated>2013-08-01T17:39:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/08/01/my-knife-was-slow</id>
+    <content type="html"><![CDATA[<p>Today, I finally decided to take care of my knife.. <code>knife help</code> was taking 30seconds..</p>
+
+<!-- more -->
+
+
+<p>I use zsh, with the <a href="https://gist.github.com/agnoster/3712874">beautiful agnoster style</a>! Here is my <a href="https://github.com/pierreozoux/dotfiles/blob/master/zshrc">zsh file</a>.</p>
+
+<h2>This is how I improved the speed of knife</h2>
+
+<p>After reading <a href="http://lists.opscode.com/sympa/arc/chef/2011-05/msg00020.html">that thread</a>, I decided to give it a try :
+<code>bash 1. Clean your knife plugin
+gem list | grep knife-
+gem uninstall knife-unused_plugin
+</code></p>
+
+<p>```bash 2. Clean your gem env</p>
+
+<h1>At your own risk, I add to reinstall some gem, but it was a lot faster afterward!</h1>
+
+<p>gem clean
+```
+\o/, it&rsquo;s a lot better (3s), but still not satisfied&hellip; If you have some hints?
+On top of that, my terminal was taking some seconds to load.. Annoyed&hellip;</p>
+
+<h2>Make faster the terminal loading</h2>
+
+<p>rbenv was taking a bit of time, I tried <a href="http://cantina.co/2013/01/25/speeding-up-your-console-when-using-rbenv/">this</a>
+```bash 3. change the rbenv way of loading</p>
+
+<h1>in zsh config file</h1>
+
+<p>eval &ldquo;$(rbenv init &ndash; &mdash;no-rehash)&rdquo;
+```</p>
+
+<p>I still had this anoying message &ldquo;you have new mails&rdquo;, actually, I noticed, that I had an used crontab throwing errors there. And a mail per day since some month&hellip;
+```bash 4. clean mails
+cat /dev/null > /var/mail/pierreozoux</p>
+
+<h1>remove the unused crontab</h1>
+
+<p>crontab -e
+```</p>
+
+<p>Great, my terminal is loading really fast again, I will be able to relax now :)</p>
+
+<p>As always, feel free to comment/insult/troll!</p>
+]]></content>
+  </entry>
+  
+</feed>

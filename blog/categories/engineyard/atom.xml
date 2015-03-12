@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: engineyard | Pierre-O's Blog]]></title>
+  <link href="http://pierreozoux.github.io/blog/categories/engineyard/atom.xml" rel="self"/>
+  <link href="http://pierreozoux.github.io/"/>
+  <updated>2015-03-12T21:02:40+00:00</updated>
+  <id>http://pierreozoux.github.io/</id>
+  <author>
+    <name><![CDATA[Pierre Ozoux]]></name>
+    <email><![CDATA[pierre@ozoux.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Why open source is great... How to make ey-local working with mysql and unicorn]]></title>
+    <link href="http://pierreozoux.github.io/blog/2013/07/09/why-open-source-is-great-dot-dot-dot-how-to-make-ey-local-working-with-mysql-and-unicorn/"/>
+    <updated>2013-07-09T15:25:00+01:00</updated>
+    <id>http://pierreozoux.github.io/blog/2013/07/09/why-open-source-is-great-dot-dot-dot-how-to-make-ey-local-working-with-mysql-and-unicorn</id>
+    <content type="html"><![CDATA[<p>When Engine Yard released <code>ey-local</code>, I was amazed as it was promising to facilitate my work. But it was a bit (s/bit/lot/) more difficult than <code>ey-local up</code></p>
+
+<p>I&rsquo;ll try to explain quickly how I went thou the obstacles.</p>
+
+<!-- more -->
+
+
+<h2>Vagrant</h2>
+
+<p>I already explained <a href="/blog/2013/07/09/how-to-isolate-vagrant-env/">How to isolate vagrant env</a>, and it was indeed because <code>ey-local</code> is using the old vagrant.</p>
+
+<h2>The right workflow</h2>
+
+<p>The code of <code>ey-local</code> is open source but not in a git repo, so I had to find my way, to make a sustainable workflow.</p>
+
+<h3>Patch the recipes</h3>
+
+<p>On the way, I found it would be great to modify as little as possible the current workflow, so I decided to use the <code>patch</code> scheme that was already setup in the gem for the recipes.</p>
+
+<p>The 1st issue was that, it was not working out of the box, so I wrote a <a href="https://github.com/pierreozoux/patches_ey-local/blob/master/patches/required.patch">first patch</a> that make the gem behaving correctly regarding the basics.</p>
+
+<h3>Give back to the community</h3>
+
+<p>Looking at the EngineYard support, I saw a great demand for certain features, that I wanted also. So I thought it would be great to give back to the community.</p>
+
+<p>It is how I decided to go thou the creation of this <a href="https://github.com/pierreozoux/patches_ey-local">github repo</a>. So this is a place for us to share our patches for <code>ey-local</code>!</p>
+
+<p>Hopefully, EngineYard will reuse this material for the next releases.</p>
+
+<h2>Hacky? Hacky!</h2>
+
+<p>Yes it is unfortunately really hacky, and the next step for <code>ey-local</code>, would be to modify it so well, that we have a replacement for <code>ey</code> command.</p>
+
+<p>It should behave exactly the same, and maybe add a configuration file for the configuration we normally do online!</p>
+
+<h2>That&rsquo;s Why open source is great&hellip;</h2>
+
+<p>But it would be greater with a git repo :)</p>
+
+<p>As always, feel free to comment/insult/troll!</p>
+]]></content>
+  </entry>
+  
+</feed>
