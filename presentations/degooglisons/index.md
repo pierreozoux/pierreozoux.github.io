@@ -61,7 +61,7 @@ Un site visité aujourd'hui
 
 * Windows10 (laptop/tablet/phone)
 * XBox (and [ther webcam/mic in your living room!](http://n4g.com/news/1470786/xbox-one-owners-kinect-is-still-spying-on-everything-you-say))
-* Outlook/Office365
+* Outlook/Office365/skype
 
 
 ## Amazon
@@ -302,6 +302,8 @@ comme le vélo est une alternative à la voiture
 
 <img data-src="https://framagit.org/Framatophe/doipresentation/raw/master/images/vousetesici.png" width="500px">
 
+
+## Challenge Accepted!
 
 ![challengeaccepted](https://framagit.org/Framatophe/doipresentation/raw/master/images/challengeaccepted.jpg)
 
