@@ -59,10 +59,9 @@ Un site visité aujourd'hui
 
 ## Microsoft
 
-* Window10 (laptop/tablet/phone)
+* Windows10 (laptop/tablet/phone)
 * XBox (and [ther webcam/mic in your living room!](http://n4g.com/news/1470786/xbox-one-owners-kinect-is-still-spying-on-everything-you-say))
 * Outlook/Office365
-* Azure
 
 
 ## Amazon
